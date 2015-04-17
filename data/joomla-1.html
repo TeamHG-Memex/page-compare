@@ -1,0 +1,1045 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"><html xmlns="http://www.w3.org/1999/xhtml" dir="ltr" lang="en-gb" xml:lang="en-gb"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta http-equiv="content-language" content="en-gb">
+<meta http-equiv="content-style-type" content="text/css">
+<meta http-equiv="imagetoolbar" content="no">
+<meta name="resource-type" content="document">
+<meta name="distribution" content="global">
+<meta name="keywords" content="Joomla, CMS, content management, PHP, MySQL, free, open, source, forum, website, webhosting">
+<meta name="description" content="Joomla! Discussion Forums">
+<title>Joomla! • Index page</title>
+<link href="./styles/joomla12/theme/images/favicon.ico" rel="shortcut icon" type="image/x-icon">
+<link rel="alternate" type="application/atom+xml" title="Feed - Joomla!" href="http://forum.joomla.org/feed.php">
+<link rel="stylesheet" href="./styles/joomla12/theme/stylesheet.css?20110428" type="text/css">
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" href="./styles/joomla12/theme/ie6.css" />
+<![endif]-->
+<script type="text/javascript" src="http://partner.googleadservices.com/gampad/google_service.js">
+</script>
+<script type="text/javascript">
+ GS_googleAddAdSenseService("ca-pub-1189370408998555");
+ GS_googleEnableAllServices();
+</script><script src="http://partner.googleadservices.com/gampad/google_ads.js"></script>
+<script type="text/javascript">
+ GA_googleAddSlot("ca-pub-1189370408998555", "Joomla_forum_1");
+ GA_googleAddSlot("ca-pub-1189370408998555", "Joomla_forum_2");
+ GA_googleAddSlot("ca-pub-1189370408998555", "Joomla_Forum");
+ GA_googleAddSlot("ca-pub-1189370408998555", "Joomla_Forum_Footer");
+ GA_googleAddSlot("ca-pub-1189370408998555", "Joomla_forum_in_post");
+</script>
+<script type="text/javascript">
+ GA_googleFetchAds();
+</script>
+<script type="text/javascript">
+// <![CDATA[
+
+
+function popup(url, width, height, name)
+{
+	if (!name)
+	{
+		name = '_popup';
+	}
+
+	window.open(url.replace(/&amp;/g, '&'), name, 'height=' + height + ',resizable=yes,scrollbars=yes,width=' + width);
+	return false;
+}
+
+function jumpto()
+{
+	var page = prompt('Enter the page number you wish to go to:', '');
+	var per_page = '';
+	var base_url = '';
+
+	if (page !== null && !isNaN(page) && page == Math.floor(page) && page > 0)
+	{
+		if (base_url.indexOf('?') == -1)
+		{
+			document.location.href = base_url + '?start=' + ((page - 1) * per_page);
+		}
+		else
+		{
+			document.location.href = base_url.replace(/&amp;/g, '&') + '&start=' + ((page - 1) * per_page);
+		}
+	}
+}
+
+/**
+* Find a member
+*/
+function find_username(url)
+{
+	popup(url, 760, 570, '_usersearch');
+	return false;
+}
+
+/**
+* Mark/unmark checklist
+* id = ID of parent container, name = name prefix, state = state [true/false]
+*/
+function marklist(id, name, state)
+{
+	var parent = document.getElementById(id);
+	if (!parent)
+	{
+		eval('parent = document.' + id);
+	}
+
+	if (!parent)
+	{
+		return;
+	}
+
+	var rb = parent.getElementsByTagName('input');
+	
+	for (var r = 0; r < rb.length; r++)
+	{
+		if (rb[r].name.substr(0, name.length) == name)
+		{
+			rb[r].checked = state;
+		}
+	}
+}
+
+
+
+// ]]>
+</script>
+<script type="text/javascript" src="http://forum.joomla.org/styles/joomla12/template/jquery.js"></script>
+<script type="text/javascript" src="http://forum.joomla.org/styles/joomla12/template/jquery.cookie.js"></script>
+<script type="text/javascript" language="javascript">
+
+$(document).ready(function () {
+    
+	//$('#page').css('width',$.cookie('pageWidth'));
+	$('BODY').css('font-size',$.cookie('fontSize'));
+	
+	$('#change-width').bind("click", function(e){
+		var pageWidth = $('#page').css('width');
+		if (pageWidth == '960px') pageWidth = '94%'; else pageWidth = '960px';
+		
+		$.cookie('pageWidth', pageWidth);
+
+		$('#page').css('width',pageWidth);
+	});
+	
+	$('#change-font-size').bind("click", function(e){
+		var fontSize = parseInt($('BODY').css('font-size'));
+		
+		if(fontSize < 12){
+			fontSize++;
+		} else {
+			fontSize = 10;
+		}
+		
+		$.cookie('fontSize', fontSize);
+
+		$('BODY').css('font-size',fontSize);
+		
+	});
+	
+	
+});
+</script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/osd.js"></script></head>
+<body class="site ltr">
+<a name="top"></a>
+<div id="menuWrap">
+<div id="menuWrapInner" class="container_12 clearfix">
+<div id="menu" class="width">
+ 
+<ul id="menu">
+<li class="home_item"><a href="http://www.joomla.org/" class="drop"><span class="logo">Joomla!<span class="sup">®</span></span></a>
+ 
+<div class="dropdown_2columns">
+ 
+<div class="col_2">
+<h2>Welcome to Joomla!</h2>
+</div>
+<div class="col_2">
+<p>Joomla! is an award-winning open source CMS for building powerful websites.</p>
+</div>
+<div class="col_2">
+<h2>Recent Joomla! News</h2>
+</div>
+<div class="col_2"> <img src="./styles/joomla12/theme/images/menu/joomla.jpg" class="img_left imgshadow" width="70" height="70" alt="Joomla!">
+<ul class="img_left">
+<li><a href="http://www.joomla.org/announcements.html">Announcements</a></li>
+<li><a href="http://community.joomla.org/blogs/community.html">Joomla! Blogs</a></li>
+<li><a href="http://magazine.joomla.org/">Joomla! Magazine</a></li>
+</ul>
+</div>
+<div class="col_2">
+<h2>Support Joomla!</h2>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li class="blue"><a href="http://shop.joomla.org/">Shop Joomla! Gear</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li class="blue"><a href="http://opensourcematters.org/support-joomla.html">Contribution</a></li>
+</ul>
+</div>
+</div>
+ 
+</li>
+ 
+<li><a href="http://www.joomla.org/about-joomla.html" class="drop">About</a>
+ 
+<div class="dropdown_4columns">
+ 
+<div class="col_4">
+<h2>What Is Joomla?</h2>
+<p>Joomla is an award-winning content management system (CMS), which enables you to build Web sites and powerful online applications.<br><a href="http://www.joomla.org/about-joomla.html">Read more...</a></p>
+</div>
+<div class="col_2">
+<h3>Joomla! for Business</h3>
+<p>Joomla! is a extremely customizable and adaptable for Enterprise, SMBs, NPOs and beyond. <a href="http://www.joomla.org/core-features.html">Read more...</a></p>
+</div>
+<div class="col_2">
+<h3>Joomla! for Developers</h3>
+<p class="black_box">No matter what level of experience you hold, Joomla! has strengths to match; programmers, designers and end users alike!<a href="http://developer.joomla.org/">Read more...</a></p>
+</div>
+<div class="col_4">
+<h2>Learn more about Joomla!</h2>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://www.joomla.org/about-joomla.html">The Software</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://www.joomla.org/about-joomla/the-project.html">The Project</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://www.joomla.org/about-joomla/the-project/leadership-team.html">The Leadership</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://opensourcematters.org/index.php">Open Source Matters</a></li>
+</ul>
+</div>
+</div>
+ 
+</li>
+ 
+<li><a href="http://community.joomla.org/" class="drop">Community &amp; Support</a>
+ 
+<div class="dropdown_3columns"> 
+<div class="col_1">
+<h3>Connect!</h3>
+<ul>
+<li><a href="http://community.joomla.org/events.html">Joomla! Events</a></li>
+<li><a href="http://ux.joomla.org/">Joomla! UX</a></li>
+<li><a href="http://community.joomla.org/user-groups.html">Joomla! User Groups</a></li>
+</ul>
+</div>
+<div class="col_1">
+<h3>Support!</h3>
+<ul>
+<li><a href="http://forum.joomla.org/">Joomla! Forum</a></li>
+<li><a href="http://docs.joomla.org/">Joomla! Documentation</a></li>
+<li><a href="http://resources.joomla.org/">Joomla! Resources</a></li>
+</ul>
+</div>
+<div class="col_1">
+<h3>Read!</h3>
+<ul>
+<li><a href="http://magazine.joomla.org/">Joomla! Magazine</a></li>
+<li><a href="http://community.joomla.org/connect.html">Joomla! Connect</a></li>
+<li><a href="http://www.joomla.org/mailing-lists.html">Joomla! Mailing Lists</a></li>
+</ul>
+</div>
+<div class="col_3">
+<h2>Get involved with Joomla!</h2> <img src="./styles/joomla12/theme/images/menu/joomla.jpg" alt="Joomla!" width="70" height="70" class="img_left imgshadow">
+<p>Joomla is an open source project and contributions from the community are essential to its growth and success. Anyone can contribute on any level, even newcomers can contribute to Joomla. <a href="http://www.joomla.org/about-joomla/contribute-to-joomla.html">Read more...</a></p>
+</div>
+</div>
+ 
+</li>
+ 
+<li><a href="http://extensions.joomla.org/" class="drop">Extend</a>
+ 
+<div class="dropdown_2columns">
+ 
+<div class="col_1">
+<h3>Directories</h3>
+<ul>
+<li><a href="http://extensions.joomla.org/">Extension Directory</a></li>
+<li><a href="http://community.joomla.org/showcase/">Showcase Directory</a></li>
+<li><a href="http://resources.joomla.org/">Resource Directory</a></li>
+<li><a href="http://community.joomla.org/translations.html">Translations</a></li>
+<li><a href="http://ideas.joomla.org/">Idea Pool</a></li>
+</ul>
+</div>
+<div class="col_1">
+<h3>Developers</h3>
+<ul>
+<li><a href="http://developer.joomla.org/">Developer Site</a></li>
+<li><a href="http://docs.joomla.org/">Documentation</a></li>
+<li><a href="http://docs.joomla.org/Bug_Squad">Joomla! Bug Squad</a></li>
+<li><a href="http://api.joomla.org/">Joomla! API</a></li>
+<li><a href="http://joomlacode.org/">JoomlaCode</a></li>
+<li><a href="https://github.com/joomla/joomla-platform">Joomla! Platform</a></li>
+</ul>
+</div>
+</div>
+ 
+</li>
+ 
+<li class="download"><a href="http://www.joomla.org/download.html" class="drop">Download</a>
+ 
+<div class="dropdown_3columns">
+ 
+<div class="col_3">
+<h2>Download Joomla! 3.3 </h2>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li class="blue"><a href="http://www.joomla.org/download.html#j3">3.3 Full Package</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://joomlacode.org/gf/project/joomla/frs/?action=index">Update Packages</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://demo.joomla.org/">Demo Joomla! 3.3</a></li>
+</ul>
+</div>
+<div class="col_3">
+<h2>Download Joomla! 2.5</h2>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li class="orange"><a href="http://www.joomla.org/download.html">2.5 Full Package</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://joomlacode.org/gf/project/joomla/frs/?action=index">Update Packages</a></li>
+</ul>
+</div>
+<div class="col_1">
+<ul class="greybox">
+<li><a href="http://demo.joomla.org/">Demo Joomla! 2.5</a></li>
+</ul>
+</div>
+<div class="col_3">
+<h2>Getting Started with Joomla!</h2>
+</div>
+<div class="col_3">
+<ul class="nowrap">
+<li><a href="http://docs.joomla.org/Beginners">Beginner Documentation</a></li>
+<li><a href="http://www.joomla.org/technical-requirements.html">Technical Requirements</a></li>
+<li><a href="http://opensourcematters.org/index.php?option=com_content&amp;view=article&amp;id=56&amp;Itemid=155">License &amp; Usage</a></li>
+</ul>
+</div>
+</div>
+ 
+</li>
+<li class="menu_right language"><a href="http://community.joomla.org/translations.html" class="drop language_link">Internationalization</a> 
+<div class="dropdown_1column align_right"> 
+<div class="col_1">
+<h2>Internationalization
+</h2>
+</div>
+<div class="col_1">
+<ul class="nowrap">
+<li><a href="http://community.joomla.org/translations.html">Translations</a></li>
+<li><a href="http://multilingual-joomla-demo.cloudaccess.net/">Multilingual Demo</a></li>
+<li><a href="http://docs.joomla.org/Translations_Working_Group">Translation Working Group</a></li>
+<li><a href="http://forum.joomla.org/viewforum.php?f=11">Translations Forum</a></li>
+</ul>
+</div>
+</div> 
+</li> 
+<li class="menu_right search">
+ 
+<form action="http://forum.joomla.org/results.php" id="searchbox_007628682600509520926:higrppcfurc">
+<div class="search-box-area">
+<input type="hidden" name="cx" value="007628682600509520926:higrppcfurc">
+<input type="hidden" name="cof" value="FORID:9">
+ 
+<input type="text" class="text inputbox" name="q" size="25">
+ 
+</div>
+</form>
+<script type="text/javascript" src="http://www.google.com/coop/cse/brand?form=searchbox_007628682600509520926%3Ahigrppcfurc&amp;lang=en"></script>
+ 
+</li>
+</ul>
+ 
+</div>
+</div>
+</div>
+<div id="titleWrap">
+<div id="title" class="container_12 clearfix">
+<div class="grid_7">
+<h1 title="Welcome to the Joomla! Forum">The Joomla! Forum ™</h1>
+</div>
+<div class="grid_5 right">
+<div class="downdemo">
+<p class="download-16">
+<a href="http://www.joomla.org/download.html">Download</a>
+</p>
+<p class="demo">
+<a href="http://demo.joomla.org">Demo</a>
+</p>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="insetWrap">
+<div id="inset" class="container_12 clearfix">
+<ul class="menu">
+<li><a href="http://forum.joomla.org">Home</a></li>
+<li><a href="./ucp.php?mode=register&amp;sid=7a784c443338b520f229994e327ca31c">Register</a></li>
+<li><a href="http://forum.joomla.org/viewtopic.php?f=8&amp;t=65">Forum rules</a></li>
+<li><a href="./faq.php?sid=7a784c443338b520f229994e327ca31c">FAQ</a></li>
+<li><a href="./memberlist.php?mode=leaders&amp;sid=7a784c443338b520f229994e327ca31c">The team</a></li>
+<li><a href="./ucp.php?mode=login&amp;sid=7a784c443338b520f229994e327ca31c">Login</a></li>
+</ul>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="containerWrap">
+<div id="container" class="container_12 clearfix">
+<div id="mainbody" class="6 maincontent">
+<div class="clr"></div>
+<div style="text-align:center;">
+<script type="text/javascript">
+									GA_googleFillSlot("Joomla_Forum");
+							</script><script src="http://pubads.g.doubleclick.net/gampad/ads?correlator=2951829915697152&amp;output=json_html&amp;callback=GA_googleSetAdContentsBySlotForSync&amp;impl=s&amp;client=ca-pub-1189370408998555&amp;slotname=Joomla_Forum&amp;page_slots=Joomla_Forum&amp;cookie_enabled=1&amp;url=http%3A%2F%2Fforum.joomla.org%2F&amp;lmt=1429158825&amp;dt=1429158825026&amp;cc=26&amp;biw=1024&amp;bih=768&amp;adk=3020655944&amp;adx=32&amp;ady=177&amp;ifi=1&amp;oid=3&amp;u_his=1&amp;u_h=768&amp;u_w=1024&amp;u_ah=768&amp;u_aw=1024&amp;u_cd=24&amp;flash=0&amp;gads=v2&amp;ga_vid=290328385.1429158825&amp;ga_sid=1429158825&amp;ga_hid=1117976440"></script><div id="google_ads_div_Joomla_Forum_ad_wrapper">
+<div id="google_ads_div_Joomla_Forum_ad_container" style="display:inline-block;">
+<ins style="width: 728px; height: 90px; display: inline-table; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><ins style="width: 728px; height: 90px; display: block; position: relative; border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; "><iframe id="google_ads_iframe_Joomla_Forum" name="google_ads_iframe_Joomla_Forum" width="728" height="90" scrolling="no" marginwidth="0" marginheight="0" frameborder="0" style="border-top-width: 0px; border-right-width: 0px; border-bottom-width: 0px; border-left-width: 0px; border-style: initial; border-color: initial; position: absolute; top: 0px; left: 0px; "></iframe></ins></ins></div>
+</div>
+<script>GA_googleCreateDomIframe("google_ads_div_Joomla_Forum_ad_container" ,"Joomla_Forum");</script>
+</div>
+<div id="wrapcentre">
+<br style="clear: both;">
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+<tbody><tr>
+<td class="row1">
+<p class="breadcrumbs"><a href="./index.php?sid=7a784c443338b520f229994e327ca31c">Board index</a></p>
+</td>
+</tr>
+</tbody></table>
+<br><table class="tablebg table-white" cellspacing="1" width="100%">
+<tbody><tr>
+<th colspan="2">&nbsp;Forum&nbsp;</th>
+<th width="50">&nbsp;Topics&nbsp;</th>
+<th width="50">&nbsp;Posts&nbsp;</th>
+<th>&nbsp;Last post&nbsp;</th>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=504&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Announcements</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=8&amp;sid=7a784c443338b520f229994e327ca31c">Announcements</a>
+<p class="forumdesc">Announcements from the Joomla! Project for the attention of all Users. We encourage all Joomla! users to subscribe to this forum or check it regularly. <br><strong><span style="color: red">Joomla! Security Updates</span></strong>:  <a class="postlink" href="http://feeds.joomla.org/JoomlaSecurityNews">http://feeds.joomla.org/JoomlaSecurityNews</a>  | <strong><span style="color: red">Joomla! Vulnerable Extensions</span></strong>:  <a class="postlink" href="http://feeds.joomla.org/JoomlaSecurityVulnerableExtensions">http://feeds.joomla.org/JoomlaSecurityV ... Extensions</a> </p>
+<p class="forumdesc"><strong>Subforum: </strong> <a href="./viewforum.php?f=9&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Announcements Discussions</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">401</p></td>
+<td class="row2" align="center"><p class="topicdetails">10323</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=9&amp;p=3291247&amp;sid=7a784c443338b520f229994e327ca31c#p3291247">Re: Discuss Joomla! 3.4</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=774685&amp;sid=7a784c443338b520f229994e327ca31c">bizguy15</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Mon Apr 13, 2015 12:42 pm</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=705&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! 3.x - Ask Support Questions Here</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=706&amp;sid=7a784c443338b520f229994e327ca31c">General Questions/New to Joomla! 3.x</a>
+<p class="forumdesc">General questions relating to Joomla! 3.x. Please consider the availability of third-party templates and extensions when deciding which Joomla version to use.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">14154</p></td>
+<td class="row2" align="center"><p class="topicdetails">54779</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=706&amp;p=3292364&amp;sid=7a784c443338b520f229994e327ca31c#p3292364">Re: Language switcher problem</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=224484&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">imanickam</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 3:24 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=707&amp;sid=7a784c443338b520f229994e327ca31c">Installation Joomla! 3.x</a>
+<p class="forumdesc">Need help installing Joomla! 3.x? For all Joomla! 3.x installation issues please use this forum. Note: Users creating new sites can use either version 2.5 or 3.x. Please consider the availability of third-party templates and extensions when deciding which Joomla version to use.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+<p class="forumdesc"><strong>Subforum: </strong> <a href="./viewforum.php?f=717&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 3.x on IIS webserver</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">1650</p></td>
+<td class="row2" align="center"><p class="topicdetails">8314</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=707&amp;p=3292205&amp;sid=7a784c443338b520f229994e327ca31c#p3292205">Re: Global Configuration screen is completely blank -please </a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=610054&amp;sid=7a784c443338b520f229994e327ca31c">sovainfo</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 1:54 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=708&amp;sid=7a784c443338b520f229994e327ca31c">Administration Joomla! 3.x</a>
+<p class="forumdesc">Need help with the Administration of your Joomla! 3.x site? This is the spot for you.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+<p class="forumdesc"><strong>Subforum: </strong> <a href="./viewforum.php?f=719&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Access Control List (ACL) in Joomla! 3.x</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">4161</p></td>
+<td class="row2" align="center"><p class="topicdetails">17103</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=708&amp;p=3292352&amp;sid=7a784c443338b520f229994e327ca31c#p3292352">Re: Responsive menu options</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=6679&amp;sid=7a784c443338b520f229994e327ca31c">masoesa</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 1:59 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=710&amp;sid=7a784c443338b520f229994e327ca31c">Migrating and Upgrading to Joomla! 3.x</a>
+<p class="forumdesc">Need help upgrading your Joomla! website or converting to Joomla! 3.x? Please consider the availability of third-party templates and extensions when deciding which Joomla version to use.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">2033</p></td>
+<td class="row2" align="center"><p class="topicdetails">11897</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=710&amp;p=3292369&amp;sid=7a784c443338b520f229994e327ca31c#p3292369">Re: White screen on site after migrating from 2.5 to 3.4.1</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=275615&amp;sid=7a784c443338b520f229994e327ca31c">trusting</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 3:43 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=714&amp;sid=7a784c443338b520f229994e327ca31c">Security in Joomla! 3.x</a>
+<p class="forumdesc">Discussion regarding Joomla! 3.x security issues.</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=28000&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">mandville</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=67439&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">PhilD</a>, <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">298</p></td>
+<td class="row2" align="center"><p class="topicdetails">1711</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=714&amp;p=3292155&amp;sid=7a784c443338b520f229994e327ca31c#p3292155">Re: Potential security risk after migrating from 2.5.28 to 3</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=709093&amp;sid=7a784c443338b520f229994e327ca31c">JAVesey</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 11:23 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=715&amp;sid=7a784c443338b520f229994e327ca31c">Extensions for Joomla! 3.x</a>
+<p class="forumdesc">This forum is for general questions about extensions for Joomla! 3.x.</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=471&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">pe7er</a>, <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">4625</p></td>
+<td class="row2" align="center"><p class="topicdetails">13108</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=715&amp;p=3292351&amp;sid=7a784c443338b520f229994e327ca31c#p3292351">Re: Take information forma email to page?</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=767574&amp;sid=7a784c443338b520f229994e327ca31c">jootempl</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 1:54 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=713&amp;sid=7a784c443338b520f229994e327ca31c">Templates for Joomla! 3.x</a>
+<p class="forumdesc">Everything to do with Joomla! 3.x templates and templating.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">2990</p></td>
+<td class="row2" align="center"><p class="topicdetails">11424</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=713&amp;p=3292370&amp;sid=7a784c443338b520f229994e327ca31c#p3292370">Re: Change LOGO when changing language in multilanguage webs</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=69616&amp;sid=7a784c443338b520f229994e327ca31c">MastaChu</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 3:51 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=712&amp;sid=7a784c443338b520f229994e327ca31c">Search Engine Optimization (Joomla! SEO) in Joomla! 3.x</a>
+<p class="forumdesc">Discuss Search Engine Optimization in relation to Joomla! 3.x. This forum will also have discussions on SEF/SEO Joomla! 3.x extensions.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">628</p></td>
+<td class="row2" align="center"><p class="topicdetails">3692</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=712&amp;p=3292367&amp;sid=7a784c443338b520f229994e327ca31c#p3292367">Converting normal html5 to joomla without change the layout</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777708&amp;sid=7a784c443338b520f229994e327ca31c">rotividros</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 3:32 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=711&amp;sid=7a784c443338b520f229994e327ca31c">Language - Joomla! 3.x</a>
+<p class="forumdesc">General questions regarding the use of languages in Joomla! 3.x.</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=14&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #666600;" class="username-coloured">infograf768</a>, <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">614</p></td>
+<td class="row2" align="center"><p class="topicdetails">3055</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=711&amp;p=3292256&amp;sid=7a784c443338b520f229994e327ca31c#p3292256">Re: The other menu disappears on multilingual site</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777557&amp;sid=7a784c443338b520f229994e327ca31c">sarza</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 4:35 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=709&amp;sid=7a784c443338b520f229994e327ca31c">Performance - Joomla! 3.x</a>
+<p class="forumdesc">Discussion regarding Joomla! 3.x Performance issues.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:#660000;" href="./memberlist.php?mode=group&amp;g=41&amp;sid=7a784c443338b520f229994e327ca31c">General Support Moderators</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">415</p></td>
+<td class="row2" align="center"><p class="topicdetails">1819</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=709&amp;p=3292310&amp;sid=7a784c443338b520f229994e327ca31c#p3292310">Problemas Con Jf Slideshow</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777692&amp;sid=7a784c443338b520f229994e327ca31c">jvc</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 9:29 pm</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=513&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Older Version Support</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=614&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! 2.5</a>
+<p class="forumdesc"></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=615&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">General Questions/New to Joomla! 2.5</a>, <a href="./viewforum.php?f=622&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Installation Joomla! 2.5</a>, <a href="./viewforum.php?f=623&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 2.5 on IIS webserver</a>, <a href="./viewforum.php?f=624&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Administration Joomla! 2.5</a>, <a href="./viewforum.php?f=673&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Access Control List (ACL) in Joomla! 2.5</a>, <a href="./viewforum.php?f=620&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Extensions for Joomla! 2.5</a>, <a href="./viewforum.php?f=619&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Templates for Joomla! 2.5</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">87146</p></td>
+<td class="row2" align="center"><p class="topicdetails">321714</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=619&amp;p=3292356&amp;sid=7a784c443338b520f229994e327ca31c#p3292356">Re: how to edit copyright and designed by from the footer</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=224484&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">imanickam</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 2:33 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=506&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! 1.5</a>
+<p class="forumdesc"></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=428&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">General Questions/New to Joomla! 1.5</a>, <a href="./viewforum.php?f=429&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Installation 1.5</a>, <a href="./viewforum.php?f=543&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 1.5 on IIS webserver</a>, <a href="./viewforum.php?f=431&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Administration 1.5</a>, <a href="./viewforum.php?f=430&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Migrating and Upgrading to Joomla! 1.5</a>, <a href="./viewforum.php?f=432&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Security in Joomla! 1.5</a>, <a href="./viewforum.php?f=470&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Extensions for Joomla! 1.5</a>, <a href="./viewforum.php?f=466&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Templates for Joomla! 1.5</a>, <a href="./viewforum.php?f=544&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Search Engine Optimization (Joomla! SEO) in Joomla! 1.5</a>, <a href="./viewforum.php?f=485&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Language - Joomla! 1.5</a>, <a href="./viewforum.php?f=433&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Performance - Joomla! 1.5</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">260961</p></td>
+<td class="row2" align="center"><p class="topicdetails">955327</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=431&amp;p=3292355&amp;sid=7a784c443338b520f229994e327ca31c#p3292355">Re: Joomla 1.5 and PHP 5.4</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=411332&amp;sid=7a784c443338b520f229994e327ca31c">nfleming</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 2:17 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=505&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! 1.0</a>
+<p class="forumdesc"></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">148832</p></td>
+<td class="row2" align="center"><p class="topicdetails">605341</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=216&amp;p=3292240&amp;sid=7a784c443338b520f229994e327ca31c#p3292240">Re: joomla extentions</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=760519&amp;sid=7a784c443338b520f229994e327ca31c">angie_s</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 3:42 pm</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=542&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! International Language Support</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=511&amp;sid=7a784c443338b520f229994e327ca31c">International Zone</a>
+<p class="forumdesc"></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=243&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Albanian Forum</a>, <a href="./viewforum.php?f=17&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Arabic Forum</a>, <a href="./viewforum.php?f=568&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Azeri Forum</a>, <a href="./viewforum.php?f=274&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Basque Forum</a>, <a href="./viewforum.php?f=753&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Belarusian Forum</a>, <a href="./viewforum.php?f=64&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Bengali Forum</a>, <a href="./viewforum.php?f=104&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Bosnian Forum</a>, <a href="./viewforum.php?f=95&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Catalan Forum</a>, <a href="./viewforum.php?f=98&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Chinese Forum</a>, <a href="./viewforum.php?f=150&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Croatian Forum</a>, <a href="./viewforum.php?f=16&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Danish Forum</a>, <a href="./viewforum.php?f=13&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Dutch Forum</a>, <a href="./viewforum.php?f=21&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Filipino Forum</a>, <a href="./viewforum.php?f=25&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Finnish Forum</a>, <a href="./viewforum.php?f=19&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">French Forum</a>, <a href="./viewforum.php?f=14&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">German Forum</a>, <a href="./viewforum.php?f=50&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Greek Forum</a>, <a href="./viewforum.php?f=172&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Hebrew Forum</a>, <a href="./viewforum.php?f=403&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Hungarian Forum</a>, <a href="./viewforum.php?f=162&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Indic Languages Forum</a>, <a href="./viewforum.php?f=53&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Indonesian Forum</a>, <a href="./viewforum.php?f=55&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Italian Forum</a>, <a href="./viewforum.php?f=141&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Japanese Forum</a>, <a href="./viewforum.php?f=569&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Khmer Forum</a>, <a href="./viewforum.php?f=358&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Latvian Forum</a>, <a href="./viewforum.php?f=189&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Lithuanian Forum</a>, <a href="./viewforum.php?f=215&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Malaysian Forum</a>, <a href="./viewforum.php?f=191&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Maltese Forum</a>, <a href="./viewforum.php?f=97&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Norwegian Forum</a>, <a href="./viewforum.php?f=102&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Persian Forum</a>, <a href="./viewforum.php?f=18&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Polish Forum</a>, <a href="./viewforum.php?f=23&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Portuguese Forum</a>, <a href="./viewforum.php?f=30&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Romanian Forum</a>, <a href="./viewforum.php?f=26&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Russian Forum</a>, <a href="./viewforum.php?f=29&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Serbian/Montenegrin Forum</a>, <a href="./viewforum.php?f=402&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Slovak Forum</a>, <a href="./viewforum.php?f=157&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Slovenian Forum</a>, <a href="./viewforum.php?f=24&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Spanish Forum</a>, <a href="./viewforum.php?f=63&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Swedish Forum</a>, <a href="./viewforum.php?f=545&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Tamil Forum</a>, <a href="./viewforum.php?f=15&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Thai Forum</a>, <a href="./viewforum.php?f=51&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Turkish Forum</a>, <a href="./viewforum.php?f=340&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Urdu Forum</a>, <a href="./viewforum.php?f=171&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Vietnamese Forum</a>, <a href="./viewforum.php?f=151&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Welsh Forum</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">117076</p></td>
+<td class="row2" align="center"><p class="topicdetails">575662</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=203&amp;p=3292368&amp;sid=7a784c443338b520f229994e327ca31c#p3292368">Re: Sách hướng dẫn sử dụng Joomla! (En version) - Building W</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777659&amp;sid=7a784c443338b520f229994e327ca31c">quocngocuong</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 3:38 am</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=507&amp;sid=7a784c443338b520f229994e327ca31c">Other Forums</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=46&amp;sid=7a784c443338b520f229994e327ca31c">Open Source Products for Joomla!</a>
+<p class="forumdesc">Do you have an Open Source Product available for Joomla!? Let everyone know here.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=19591&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">normdouglas</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">1859</p></td>
+<td class="row2" align="center"><p class="topicdetails">12543</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=46&amp;p=3292007&amp;sid=7a784c443338b520f229994e327ca31c#p3292007">Build A Deal And Coupon Site using Joomla</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777622&amp;sid=7a784c443338b520f229994e327ca31c">shoes12345</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 2:49 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=306&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Events</a>
+<p class="forumdesc">The purpose of this forum is for announcements of approved Joomla events, all other event announcements are welcomed for submission to JoomlaConnect.</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=94&amp;sid=7a784c443338b520f229994e327ca31c">rdeutz</a>, <a style="color:#006400;" href="./memberlist.php?mode=group&amp;g=20&amp;sid=7a784c443338b520f229994e327ca31c">OSM</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">368</p></td>
+<td class="row2" align="center"><p class="topicdetails">2703</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=306&amp;p=3289582&amp;sid=7a784c443338b520f229994e327ca31c#p3289582">Re: How to propose a Joomla! Day</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777090&amp;sid=7a784c443338b520f229994e327ca31c">Walt78</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Tue Apr 07, 2015 3:19 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=514&amp;sid=7a784c443338b520f229994e327ca31c">Site Showcase</a>
+<p class="forumdesc">Have you seen:  <a class="postlink" href="http://community.joomla.org/showcase">http://community.joomla.org/showcase</a>  <br>In this forum you are only permitted to post one topic on your site. Threads in here are pruned automatically.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=28000&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">mandville</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">6</p></td>
+<td class="row2" align="center"><p class="topicdetails">12</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=514&amp;p=3290212&amp;sid=7a784c443338b520f229994e327ca31c#p3290212">Nordik Tech - Looking for feedback on design</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=774604&amp;sid=7a784c443338b520f229994e327ca31c">NordikTech</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 09, 2015 6:17 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=48&amp;sid=7a784c443338b520f229994e327ca31c">The Lounge</a>
+<p class="forumdesc">Relax and enjoy The Lounge. For all Non-Joomla! topics or ones that don't fit anywhere else. Normal forum rules apply.</p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">4626</p></td>
+<td class="row2" align="center"><p class="topicdetails">32410</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=48&amp;p=3291859&amp;sid=7a784c443338b520f229994e327ca31c#p3291859">Re: Creating a website, which host?</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=687678&amp;sid=7a784c443338b520f229994e327ca31c">sitesrus</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Tue Apr 14, 2015 4:57 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=562&amp;sid=7a784c443338b520f229994e327ca31c">Registered Joomla! User Groups</a>
+<p class="forumdesc">For discussion regarding Registered Joomla User Groups. All non-registered user group announcements can be submitted for possible inclusion to JoomlaConnect instead of this forum</p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">164</p></td>
+<td class="row2" align="center"><p class="topicdetails">1392</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=562&amp;p=3270906&amp;sid=7a784c443338b520f229994e327ca31c#p3270906">Re: Login info</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=600271&amp;sid=7a784c443338b520f229994e327ca31c">neo7sxn</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Feb 25, 2015 6:52 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=575&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Ideas Forum</a>
+<p class="forumdesc">Do you have an idea for the Joomla community that you can help implement? Discuss in here.</p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">245</p></td>
+<td class="row2" align="center"><p class="topicdetails">1449</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=575&amp;p=3291901&amp;sid=7a784c443338b520f229994e327ca31c#p3291901">Re: Initiatives?</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=723543&amp;sid=7a784c443338b520f229994e327ca31c">mrcorex</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Tue Apr 14, 2015 6:16 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=704&amp;sid=7a784c443338b520f229994e327ca31c">Community Blog Discussions</a>
+<p class="forumdesc">This board is for discussions about joomla.org blog posts.</p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">88</p></td>
+<td class="row2" align="center"><p class="topicdetails">2137</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=704&amp;p=3292357&amp;sid=7a784c443338b520f229994e327ca31c#p3292357">Re: Community Feedback on the Proposal for a New Organizatio</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=251146&amp;sid=7a784c443338b520f229994e327ca31c">porwig</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 2:35 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=681&amp;sid=7a784c443338b520f229994e327ca31c">Help wanted in the community</a>
+<p class="forumdesc">Do you want to help out within the Joomla community? In this forum you can find help requests from various areas within the Joomla project.</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=471&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">pe7er</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=208380&amp;sid=7a784c443338b520f229994e327ca31c">QBParis</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">34</p></td>
+<td class="row2" align="center"><p class="topicdetails">35</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=681&amp;p=3074468&amp;sid=7a784c443338b520f229994e327ca31c#p3074468">Joomla! Marketing and PR Team: representatives wanted</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=471&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">pe7er</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Tue Aug 27, 2013 4:17 pm</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=646&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Development Forums</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=509&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Development</a>
+<p class="forumdesc"></p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=218211&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #000066;" class="username-coloured">ooffick</a></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=727&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 3.x Coding</a>, <a href="./viewforum.php?f=642&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 2.5 Coding</a>, <a href="./viewforum.php?f=728&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 3.x Bug Reporting</a>, <a href="./viewforum.php?f=579&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 2.5 Bug Reporting</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">3935</p></td>
+<td class="row2" align="center"><p class="topicdetails">14107</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=727&amp;p=3292359&amp;sid=7a784c443338b520f229994e327ca31c#p3292359">Re: Add component items to Joomla frontend menu</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=766512&amp;sid=7a784c443338b520f229994e327ca31c">jcms</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 16, 2015 2:46 am</p>
+</td>
+</tr>
+<tr>
+<td class="forum-cat" colspan="5"><h4><a href="./viewforum.php?f=508&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Official Sites &amp; Infrastructure</a></h4></td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=262&amp;sid=7a784c443338b520f229994e327ca31c">Extensions.Joomla.org - Feedback/Information</a>
+<p class="forumdesc">Here you can contact the editors of our <a href="http://extensions.joomla.org" class="postlink">Extensions site</a>, as well as access infomation relating to this site.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a style="color:##D2BE0;" href="./memberlist.php?mode=group&amp;g=16&amp;sid=7a784c443338b520f229994e327ca31c">JED Team</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">2134</p></td>
+<td class="row2" align="center"><p class="topicdetails">14761</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=262&amp;p=3291365&amp;sid=7a784c443338b520f229994e327ca31c#p3291365">Re: Does ticket system work ?</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=770054&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">ABSolutions</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Mon Apr 13, 2015 5:59 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=563&amp;sid=7a784c443338b520f229994e327ca31c">Resources.joomla.org - Feedback/Information</a>
+<p class="forumdesc">Here you can contact the editors of our <a href="http://resources.joomla.org" class="postlink">Resources site</a>, as well as access infomation relating to this site.</p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">63</p></td>
+<td class="row2" align="center"><p class="topicdetails">335</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=563&amp;p=3292116&amp;sid=7a784c443338b520f229994e327ca31c#p3292116">Re: [Solved]Problem with volunteers.joomla.org and banned IP</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=777657&amp;sid=7a784c443338b520f229994e327ca31c">vuicomcom</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 9:40 am</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=303&amp;sid=7a784c443338b520f229994e327ca31c">Documentation - Feedback/Information/Suggestions</a>
+<p class="forumdesc"><a href="http://docs.joomla.org/" class="postlink">Joomla! Documentation</a> Workgroup</p>
+<p class="forumdesc"><strong>Moderators:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=143&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660099;" class="username-coloured">Chris Davenport</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=282497&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">Hutchy68</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">432</p></td>
+<td class="row2" align="center"><p class="topicdetails">2385</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=303&amp;p=3290107&amp;sid=7a784c443338b520f229994e327ca31c#p3290107">Re: Articles Preview</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=730728&amp;sid=7a784c443338b520f229994e327ca31c">itoctopus</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Thu Apr 09, 2015 1:05 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=7&amp;sid=7a784c443338b520f229994e327ca31c">Sites &amp; Infrastructure - Feedback/Information</a>
+<p class="forumdesc">If you have any 'mechanical' forum or Joomla! sites related issues/suggestions with <a href="http://www.joomla.org" class="postlink">joomla.org</a>, <a href="http://community.joomla.org" class="postlink">community.joomla.org</a>, <a href="http://forum.joomla.org" class="postlink">forum.joomla.org</a>, <a href="http://vel.joomla.org" class="postlink">vel.joomla.org</a>.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=166991&amp;sid=7a784c443338b520f229994e327ca31c">brad</a></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=406&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">JoomlaCode.org</a>, <a href="./viewforum.php?f=364&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Shop.Joomla.org</a>, <a href="./viewforum.php?f=199&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 1.5 Bug Reporting</a>, <a href="./viewforum.php?f=304&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 1.5 Coding</a>, <a href="./viewforum.php?f=703&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! 3 Beta Support</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">43834</p></td>
+<td class="row2" align="center"><p class="topicdetails">234622</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=7&amp;p=3292311&amp;sid=7a784c443338b520f229994e327ca31c#p3292311">dev.j.o/security* Duplicate-ish</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=724660&amp;sid=7a784c443338b520f229994e327ca31c">NathanHawks</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Apr 15, 2015 9:39 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=701&amp;sid=7a784c443338b520f229994e327ca31c">Templates.Joomla.org - Feedback/Information</a>
+<p class="forumdesc">Here you can contact the editors of our new template site, as well as access information relating to this site.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=19536&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">hefesto</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">2</p></td>
+<td class="row2" align="center"><p class="topicdetails">27</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=701&amp;p=3271162&amp;sid=7a784c443338b520f229994e327ca31c#p3271162">Re: Joomla.com templates</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=85&amp;sid=7a784c443338b520f229994e327ca31c">TomT</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Wed Feb 25, 2015 4:13 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=573&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Community Magazine</a>
+<p class="forumdesc">A place to discuss and manage all matters related to the <a href="http://magazine.joomla.org/" class="postlink">Joomla! Community Magazine</a>.</p>
+<p class="forumdesc"><strong>Moderator:</strong> <a href="./memberlist.php?mode=viewprofile&amp;u=251146&amp;sid=7a784c443338b520f229994e327ca31c">porwig</a></p>
+<p class="forumdesc"><strong>Subforum: </strong> <a href="./viewforum.php?f=574&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! Community Magazine Editors</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">48</p></td>
+<td class="row2" align="center"><p class="topicdetails">442</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=573&amp;p=3254566&amp;sid=7a784c443338b520f229994e327ca31c#p3254566">Re: Links to older Community magazines.</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=246141&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">Per Yngve Berg</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Sat Jan 03, 2015 2:23 pm</p>
+</td>
+</tr>
+<tr>
+<td class="row1" width="50" align="center"><img src="./styles/joomla09/imageset/forum_read_subforum.gif" width="46" height="25" alt="No unread posts" title="No unread posts"></td>
+<td class="row1" width="100%">
+<a class="forumlink" href="./viewforum.php?f=510&amp;sid=7a784c443338b520f229994e327ca31c">Joomla! Working Groups</a>
+<p class="forumdesc"></p>
+<p class="forumdesc"><strong>Subforums: </strong> <a href="./viewforum.php?f=11&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Translations</a>, <a href="./viewforum.php?f=381&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">OpenSourceMatters.org</a>, <a href="./viewforum.php?f=699&amp;sid=7a784c443338b520f229994e327ca31c" class="subforum read" title="No unread posts">Joomla! Marketing and PR Team</a></p>
+</td>
+<td class="row2" align="center"><p class="topicdetails">939</p></td>
+<td class="row2" align="center"><p class="topicdetails">9983</p></td>
+<td class="row2 last-post">
+<p class="topicdetailsx">Subject: <a href="./viewtopic.php?f=11&amp;p=3291633&amp;sid=7a784c443338b520f229994e327ca31c#p3291633">Re: Language Change label in GitHub</a>
+</p><p class="topicdetailsx">Posted by: <a href="./memberlist.php?mode=viewprofile&amp;u=376742&amp;sid=7a784c443338b520f229994e327ca31c">Bakual</a></p>
+<p class="topicdetailsx" style="white-space: nowrap;">on Tue Apr 14, 2015 9:10 am</p>
+</td>
+</tr>
+</tbody></table>
+<span class="gensmall"><a href="./ucp.php?mode=delete_cookies&amp;sid=7a784c443338b520f229994e327ca31c">Delete all board cookies</a> | <a href="./memberlist.php?mode=leaders&amp;sid=7a784c443338b520f229994e327ca31c">The team</a></span><br>
+<br clear="all" class="breakpad">
+<table class="tablebg" width="100%" cellspacing="1" cellpadding="0" style="margin-top: 5px;">
+<tbody><tr>
+<td class="row1">
+<p class="breadcrumbs"><a href="./index.php?sid=7a784c443338b520f229994e327ca31c">Board index</a></p>
+</td>
+</tr>
+</tbody></table>
+<br clear="all" class="breakpad">
+<table class="tablebg" width="100%" cellspacing="1">
+<tbody><tr>
+<td class="cat cat-gray" colspan="2"><h4>Who is online</h4></td>
+</tr>
+<tr>
+<td class="row1" rowspan="2" align="center" valign="middle"><img src="./styles/joomla12/theme/images/whosonline.gif" alt="Who is online"></td>
+<td class="row1" width="100%"><span class="genmed">In total there are <strong>604</strong> users online :: 16 registered, 1 hidden and 587 guests (based on users active over the past 30 minutes)<br>Most users ever online was <strong>10365</strong> on Mon Aug 29, 2011 1:27 am<br><br>Registered users: <span style="color: #9E8DA7;" class="username-coloured">Alexa [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Baidu [Spider]</span>, <span style="color: #9E8DA7;" class="username-coloured">Bing [Bot]</span>, <a href="./memberlist.php?mode=viewprofile&amp;u=3582&amp;sid=7a784c443338b520f229994e327ca31c">bobgen</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=775281&amp;sid=7a784c443338b520f229994e327ca31c">CHec44</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=276807&amp;sid=7a784c443338b520f229994e327ca31c" style="color: #660000;" class="username-coloured">Enes</a>, <span style="color: #9E8DA7;" class="username-coloured">Exabot [Bot]</span>, <a href="./memberlist.php?mode=viewprofile&amp;u=774833&amp;sid=7a784c443338b520f229994e327ca31c">Felicpavlo</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=315272&amp;sid=7a784c443338b520f229994e327ca31c">Fendermate</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=774120&amp;sid=7a784c443338b520f229994e327ca31c">fuyuka</a>, <a href="./memberlist.php?mode=viewprofile&amp;u=738217&amp;sid=7a784c443338b520f229994e327ca31c">gaelicwinter</a>, <span style="color: #9E8DA7;" class="username-coloured">Google [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Adsense [Bot]</span>, <span style="color: #9E8DA7;" class="username-coloured">Google Feedfetcher</span>, <a href="./memberlist.php?mode=viewprofile&amp;u=777618&amp;sid=7a784c443338b520f229994e327ca31c">Mr LePaK</a>, <span style="color: #9E8DA7;" class="username-coloured">Yahoo [Bot]</span></span></td>
+</tr>
+<tr>
+<td class="row1"><b class="gensmall">Legend :: <a style="color:#660000" href="./memberlist.php?mode=group&amp;g=10&amp;sid=7a784c443338b520f229994e327ca31c">Community Workgroup</a>, <a style="color:#CC6600" href="./memberlist.php?mode=group&amp;g=19&amp;sid=7a784c443338b520f229994e327ca31c">Development</a>, <a style="color:#660099" href="./memberlist.php?mode=group&amp;g=11&amp;sid=7a784c443338b520f229994e327ca31c">Documentation</a>, <a style="color:#000066" href="./memberlist.php?mode=group&amp;g=34&amp;sid=7a784c443338b520f229994e327ca31c">Global moderators</a>, <a style="color:#006400" href="./memberlist.php?mode=group&amp;g=20&amp;sid=7a784c443338b520f229994e327ca31c">OSM</a>, <a style="color:#666600" href="./memberlist.php?mode=group&amp;g=13&amp;sid=7a784c443338b520f229994e327ca31c">Translation Teams</a>, <a style="color:#666600" href="./memberlist.php?mode=group&amp;g=47&amp;sid=7a784c443338b520f229994e327ca31c">Translation Workgroup</a></b></td>
+</tr>
+</tbody></table>
+<br clear="all" class="breakpad">
+<table class="tablebg" width="100%" cellspacing="1">
+<tbody><tr>
+<td class="cat cat-gray" colspan="2"><h4>Statistics</h4></td>
+</tr>
+<tr>
+<td class="row1"><img src="./styles/joomla12/theme/images/whosonline.gif" alt="Statistics"></td>
+<td class="row1" width="100%" valign="middle"><p class="genmed">Total posts <strong>2992685</strong> | Total topics <strong>718630</strong> | Total members <strong>666820</strong> | Our newest member <strong><a href="./memberlist.php?mode=viewprofile&amp;u=777710&amp;sid=7a784c443338b520f229994e327ca31c">chocobo11</a></strong></p></td>
+</tr>
+</tbody></table>
+<br clear="all" class="breakpad">
+<form method="post" action="./ucp.php?mode=login&amp;sid=7a784c443338b520f229994e327ca31c">
+<table class="tablebg" width="100%" cellspacing="1">
+<tbody><tr>
+<td class="cat cat-gray"><h4><a href="./ucp.php?mode=login&amp;sid=7a784c443338b520f229994e327ca31c">Login</a></h4></td>
+</tr>
+<tr>
+<td class="row1" align="center"><span class="genmed">Username:</span> <input class="post" type="text" name="username" size="10">&nbsp; <span class="genmed">Password:</span> <input class="post" type="password" name="password" size="10">&nbsp; <span class="gensmall">Log me on automatically each visit</span> <input type="checkbox" class="radio" name="autologin">&nbsp; <input type="submit" class="btnmain" name="login" value="Login"></td>
+</tr>
+</tbody></table>
+<input type="hidden" name="redirect" value="./index.php?sid=7a784c443338b520f229994e327ca31c">
+</form>
+<div class="vis-clear">&nbsp;</div>
+</div>
+<div id="wrapfooter">
+<span class="copyright">Powered by <a href="http://www.phpbb.com/" target="_blank">phpBB</a>® Forum Software © phpBB Group
+</span>
+</div>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+<div class="clear"></div>
+<div id="closingWrap"><div id="closing" class="container_12 clearfix"></div></div>
+<div class="clear"></div>
+<div id="footerWrap">
+<div id="footer" class="container_12 clearfix">
+<div class="inside">
+<div id="copy">
+<ul class="menu">
+<li class="item97">
+<a href="http://www.joomla.org"><span>Home</span></a>
+</li>
+<li class="item110"><a href="http://www.joomla.org/about-joomla.html"><span>About</span></a>
+</li>
+<li class="item98"><a href="http://community.joomla.org"><span>Community</span></a></li><li class="item99"><a href="http://forum.joomla.org"><span>Forum</span></a>
+</li>
+<li class="item100"><a href="http://extensions.joomla.org"><span>Extensions</span></a></li><li class="item206"><a href="http://resources.joomla.org"><span>Resources</span></a>
+</li>
+<li class="item102"><a href="http://docs.joomla.org"><span>Docs</span></a></li><li class="item101"><a href="http://developer.joomla.org"><span>Developer</span></a>
+</li>
+<li class="item103"><a href="http://shop.joomla.org"><span>Shop</span></a>
+</li>
+</ul>
+<div class="clr"></div>
+</div>
+<div id="link">
+<div id="footerInfo">©2005-2013 <a href="http://www.opensourcematters.org">Open Source Matters, Inc.</a> All rights reserved.&nbsp;&nbsp;&nbsp;
+<a href="http://www.rochenhost.com/joomla-hosting" target="_blank">Joomla Hosting by Rochen Ltd.</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.joomla.org/accessibility-statement.html">Accessibility Statement</a>&nbsp;&nbsp;&nbsp;
+<a href="http://www.joomla.org/privacy-policy.html">Privacy Policy</a>&nbsp;&nbsp;&nbsp;
+<a href="http://community.joomla.org/login.html">Log in</a>
+ </div>
+<div class="clr"></div>
+</div>
+<div class="clr"></div>
+</div>
+</div>
+</div>
+<div id="debug">
+</div>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write("\<script src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'>\<\/script>" );
+</script><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-544070-3");
+pageTracker._setDomainName("joomla.org");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script><script src="http://www.google-analytics.com/ga.js" type="text/javascript"></script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-544070-18");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script>
+
+</body></html>

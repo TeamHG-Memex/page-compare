@@ -1,0 +1,263 @@
+<!DOCTYPE html><html><head>
+<script>
+var SURF_N_PERF = {
+marks: {},
+highResMarks: {}
+};
+SURF_N_PERF.marks.pageStart = (new Date()).getTime();
+if(window.performance) {
+if(window.performance.now) {
+SURF_N_PERF.highResMarks.pageStart = window.performance.now();
+}
+if(window.performance.mark) {
+window.performance.mark('pageStart');
+}
+}
+SURF_N_PERF.setPageLoad = function() {
+SURF_N_PERF.marks.loadEventEnd = (new Date()).getTime();
+if(window.performance && window.performance.now) {
+SURF_N_PERF.highResMarks.loadEventEnd = window.performance.now();
+}
+};
+if(window.addEventListener) {
+window.addEventListener('load', SURF_N_PERF.setPageLoad, false);
+} else {
+window.attachEvent('onload', SURF_N_PERF.setPageLoad);
+}
+</script>
+<meta http-equiv="X-UA-Compatible" content="requiresActiveX=true">
+<meta name="robots" content="NOINDEX, NOFOLLOW">
+<script>window['adrum-start-time'] = (new Date()).getTime();</script> <meta name="application-name" content="Comcast.net">
+<meta name="msapplication-starturl" content="/?src=pin">
+<meta name="msapplication-task" content="name=XFINITY Home;action-uri=http://xfinity.comcast.net/?src=pin;icon-uri=http://xfinity.comcast.net/favicon.ico">
+<meta name="msapplication-task" content="name=XFINITY TV Home;action-uri=http://xfinitytv.comcast.net/?src=pin;icon-uri=http://xfinitytv.comcast.net/favicon.ico">
+<meta name="msapplication-task" content="name=XFINITY Connect;action-uri=http://xfinityconnect.mail.comcast.net/?src=pin;icon-uri=http://xfinity.comcast.net/favicon.ico">
+<meta name="msapplication-task" content="name=Local News &amp; Weather;action-uri=http://xfinity.comcast.net/local/?src=pin;icon-uri=http://xfinity.comcast.net/favicon.ico">
+<meta name="msapplication-task" content="name=My XFINITY Profile;action-uri=http://xfinity.comcast.net/profile/?src=pin;icon-uri=http://xfinity.comcast.net/favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
+<link rel="canonical" href="http://xfinity.comcast.net">
+<!-- TRACKING ! events: event11 ! pageName: home_x ! products: ;home_x ! channel: home ! eVar31: home_x ! prop1: /:home_x ! prop4: home ! prop5: home:home ! prop34: comcast net:home ! prop35: ! prop36: ! eVar1: /:home_x ! eVar34: cachesvc ! eVar35: cachesvc:api:data:xfinity3:home ! eVar36: home ! hier1: comcast:cim:comcast net:home:home_x ! hier2: home -->
+<title>XFINITY by Comcast -- Official Customer Site | Email | Watch TV Online</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<meta name="robots" content="NOODP,NOYDIR">
+<meta name="description" content="Visit the new XFINITY customer site to get the most out of your subscription. Watch TV online, check email, pay bill and upgrade Comcast subscription.">
+<meta name="keywords" content="XFINITY, DVR, pay bill, TV listings, official, customer, site, watch, tv, online, sports, entertainment, news, subscriber, email, XFINITY Connect, On Demand, stocks, finance, games, shopping, listings, services, support, deals, offers, headlines, Comcast">
+<!-- TRACKING
+! events: event11 ! pageName: home ! products: ;home ! channel: home ! eVar31: home ! prop1: /home/:home ! prop4: home ! prop5: home:home ! prop34: comcast net:home ! prop35: ! prop36: ! eVar1: /home/:home ! eVar34: xfinity3:home ! eVar35: xfinity3:home ! eVar36: home ! hier1: comcast:cim:comcast net:home:home ! hier2: home
+! eVar16: home ! prop12: home ! prop26: non-customized ! eVar25: non-customized
+-->
+<!-- noindex to qa and staging pages -->
+<meta name="robots" content="noindex,nofollow">
+<script type="text/javascript">
+// <![CDATA[
+if (typeof CIM === 'undefined' || !CIM) {
+var CIM = {};
+}
+CIM.properties = {
+"ads": { "space_id": "",
+"property_id": "com-hp"
+},
+"adtReadUis": "true",
+"adtWriteUis": "true",
+"ajax_prefix": "\/home",
+"assetUrl": "http://por-img.cimcontent.net",
+"autoFocusSearchBar": "true",
+"billingAlertsEnabled": "false",
+"chromeUrl": "http://pds-chr.cimcontent.net",
+"cimaPassiveCheck": "true",
+"cimaServer": "https://login.comcast.net/",
+"cimaTsInterval": "300000",
+"comcastWebmailSigninUrl": "https://login.comcast.net/login?s=wnamp",
+"comstockUrlPrefix": "https://sso.comcast.net/sso?entityid=comstock&target=",
+"connectCalendarURL": "http://calendar.comcast.net/calendar/module",
+"customerRecordEnabled": "true",
+"dataPackageContext": "static://cachesvc/api/data/xfinity3/home/doc.xml",
+"debug": (match = document.location.href.match(/\?.*debug=([^&#]*)/)) ? (match[1] == 'true') : false,
+"debugEnabled": "false",
+"disableImageReplacement": "true",
+"discoverIsCustomerEnabled": "true",
+"dvrManager": "true",
+"edataServer": "http://edata.comcast.net/cc-edata",
+"enable_remote_log": "true",
+"enableAdTargeting": "true",
+"enableCometD": "false",
+"enableCookieMonster": "false",
+"enableEmailAdOptOut": "true",
+"enableJsErrorLogging": "true",
+"enableUds": "true",
+"environment": "prodp_com",
+"environmentType": "prod",
+"expressInstall": "\/api/assets/static/expressInstall.swf",
+"externalemailLinks": "[data-cim-behavior~=email],.xpbar_email a,ol.emails .item a,#tooltip-container div.footer a",
+"externalLinks": "form.search_form,.twitter_sm,.facebook_sm,.xp_logo a,.xpbar_3 ul.xp_support a,.xp_greeting_name a,#s1 .dashboard ul a,#searchform,.xpbar_3 ul.xp_properties li.xpbar_tv a,.xpbar_3 ul.xp_properties li.xpbar_email a,.xpbar_3 ul.xp_properties li.xpbar_account a,.xpbar_3 ul.xp_properties li.xpbar_shop a",
+"fancastIsXTV": "true",
+"fancastSSO": "https://idp.comcast.net/idp/startSSO.ping?PartnerSpId=www.fancast.com",
+"fancastSSOxds": "http://xfinity.comcast.net/user/authkey/fc/?target=",
+"fancastSSOxpbar": "http://xfinity.comcast.net/user/authkey/fc/?target=",
+"feedbackProvider": "foresee",
+"flashVersion": "9.0.28",
+"galacticNavMinWidth": "1000px",
+"galacticNavUrl": "http://shared.xfinity.com",
+"getSigninHref": "\/oauth/login",
+"getSignoutHref": "https://login.comcast.net/oauth/sp-logout?client_id=Xfinity-Portal",
+"hostName": "my.xfinity.com",
+"ipaEnabled": "true",
+"ipaRefreshTime": "86400000",
+"launch_promo_active": "false",
+"lithium.api.root": "",
+"lithium.community.rss.urlprefix": "",
+"lithium.endpoint.host": "",
+"minFlashVersion": "10",
+"newCustomerRedirectUrl": "http://www.comcast.com/xfinity/",
+"olympicsPromosEnabled": "true",
+"passiveOauthEndpoint": "\/oauth/login?passive=true",
+"pathContext": "\/",
+"previewLinksExternal": "true",
+"progressDataMethod": "auto",
+"pushdownEnabled": "true",
+"pushdownHomepageEnabled": "true",
+"pushdownHomepageRedisplayCount": "20",
+"pushdownOlympicsEnabled": "true",
+"pushdownOlympicsRedisplayCount": "9",
+"queryAdEnabled": "false",
+"queryAdXHomeEnabled": "false",
+"queuePreviewEnabled": "true",
+"rdvrControl": "true",
+"redirectBrowserObjectName": "customer_redirect",
+"refreshCap": "1440",
+"refreshEnabled": "true",
+"refreshPeriod": "60",
+"remote_log_path": "\/xtv/authkey/event/store/",
+"requestURL": "http://my.xfinity.com/",
+"revision": "",
+"segments": { },
+"shindigDebug": "0",
+"shindigNocache": "0",
+"shindigServer": "my.cim.comcast.net/capi",
+"smartZoneCalWidget": "http://calendar.comcast.net",
+"smartZoneToken": "15253f3b",
+"toolbarMacDownload": "http://downloads.comcast.net/comcasttoolbar/ComcastTB.xpi",
+"toolbarPCDownload": "http://downloads.comcast.net/comcasttoolbar/ComcastInstallerTB_IE.exe",
+"toolbarPCFFDownload": "http://downloads.comcast.net/comcasttoolbar/ComcastInstallerTB_FF.exe",
+"tPCommunityAccount": "prod",
+"trackingAccount": "comcastnet",
+"tsGamesSigninUrl": "https://login.comcast.net/login?s=games&ts=15253f3b&continue=",
+"tsSigninUrl": "https://login.comcast.net/login?s=portal&ts=15253f3b&continue=",
+"tvnsEnabled": "true",
+"upsellUdbApiTimeout": "15000",
+"upsellUdbApiUrl": "https://secure.edata.comcast.net/cc-edata/upsell",
+"usePDK": "true",
+"vidChannel3Enabled": "false",
+"vidChannelBLegacyPath": "\/ui/swf/videochannel/VideoChannelPDKb.swf",
+"vidChannelLegacyPath": "\/ui/swf/videochannel/VideoChannelPlayer.swf",
+"vidChannelPDKPath": "\/ui/swf/videochannel/VideoChannelPDK.swf",
+"videoDefinedAds": "true",
+"videoPlayerEmailServiceHost": "http://xfinity.comcast.net",
+"vmCount": "true",
+"workflowCache": "uis",
+"xcalAppServerHost": "174.129.92.123",
+"xcalAppServerPort": "80",
+"xcalAppServerTest": "commandIntensive",
+"xcalEnabled": "0",
+"xcalSwfurl": "http://xfinity.comcast.net/xcal/receiver.swf",
+"xcalUsewmode": "normal;",
+"xfinityRedirectUrl": "http://xfinity.comcast.net/",
+"xfinityTvUrl": "http://xfinitytv.comcast.net",
+"xpBarEnabled": "true",
+"xpBarUrl": "http://xfinity.comcast.net/js-api/compressed/xpbar.js?id=xpbar&highlight=comcastnet&r=135",
+"xtvapiWebstreamsUrl": "http://xfinity.comcast.net/xtvapi/tve/web/streams",
+"yhmUrl": "\/qry/yhm.js" };
+document.config = CIM.properties;
+var s_account = "comcastnet";
+window["adrum-disable"] = true;
+window["adrum-app-key"] = "AD-AAB-AAA-NEG";
+window["adrum-use-strict-domain-cookies"] = true;
+// ]]>
+</script> <style>
+body {
+display: none;
+}
+</style>
+<script type="text/javascript">
+var CIMA = CIMA || {};
+CIMA.write_cookie = function(name, value, path, domain) {
+document.cookie = name + '=' + value + '; path=' + path + '; domain=' + domain;
+};
+CIMA.read_cookie = function(name) {
+var value = "; " + document.cookie,
+parts = value.split("; " + name + "=");
+return (parts.length === 2) ? parts.pop().split(";").shift() : false;
+};
+CIMA.reset_cookie = function(name, path, domain) {
+document.cookie = name + '=; expires=Thu, 01 Jan 1970 00:00:01 GMT; path=' + path + '; domain=' + domain;
+};
+CIMA.can_write_cookies = function(domain) {
+var test_cookie_name = 'weWillNeverUseThis',
+test_value = 'set';
+CIMA.write_cookie(test_cookie_name, test_value, '/', domain);
+if (CIMA.read_cookie(test_cookie_name) === test_value) {
+CIMA.reset_cookie(test_cookie_name, '/', domain);
+return true;
+}
+return false;
+};
+CIMA.authenticate = function() {
+var authentication_url;
+// eliminate consecutive IPA calls if user is off-network.
+// only attempt IP Auth if no MYG cookie exists, or no previous IPA attempt was made (no ipa_failed cookie)
+if (!CIMA.read_cookie('MYG') && CIMA.read_cookie('ipa_failed') !== '1') {
+authentication_url = CIMA.build_authentication_url(true); // true: pass ipa param with CIMA call
+} else {
+authentication_url = CIMA.build_authentication_url(false); // false: do not pass ipa param with CIMA call
+}
+if (authentication_url) {
+window.location = authentication_url;
+}
+};
+CIMA.build_authentication_url = function(use_ipa) {
+use_ipa = use_ipa || false;
+var target_url,
+ipa_param = use_ipa ? 'ipAuth=true&' : '';
+if (CIM && CIM.properties && CIM.properties["passiveOauthEndpoint"]) {
+target_url = CIM.properties['passiveOauthEndpoint'];
+if (target_url.indexOf('?') >= 0) {
+target_url = target_url + '&';
+} else {
+target_url = target_url + '?';
+}
+target_url = target_url + ipa_param + 'continue=' + window.location;
+}
+return target_url;
+};
+CIMA.authenticate_if_needed = function() {
+var flag_cookie_name = 'authChecked',
+domain = '.' + document.location.hostname;
+if (!CIMA.read_cookie("_Xfinity-Portal_session")){
+// no session cookie, user not logged in
+if (CIMA.can_write_cookies(domain)) {
+if (CIMA.read_cookie(flag_cookie_name) === '1') {
+// passive oauth was already attempted, only reset the cookie
+CIMA.write_cookie(flag_cookie_name, '0', '/', domain);
+if (!CIMA.read_cookie('MYG')) {
+// we can assume CIMA IP Auth failed because no MYG was set after initial oauth attempt with IPA param
+CIMA.write_cookie('ipa_failed', '1', '/', domain);
+}
+}
+else {
+// passive oauth was not attempted - do so now and set the cookie flag
+CIMA.write_cookie(flag_cookie_name, '1', '/', domain);
+CIMA.authenticate();
+}
+}
+} else {
+// if user has session, remove ipa_failed cookie if it exists
+if (CIMA.can_write_cookies(domain)) {
+CIMA.reset_cookie('ipa_failed', '/', domain);
+}
+}
+};
+CIMA.authenticate_if_needed();
+</script></head></html>

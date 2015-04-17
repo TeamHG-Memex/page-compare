@@ -1,0 +1,2535 @@
+<!DOCTYPE html><html lang="English (American)"><head>
+    <meta charset="utf-8">
+    <!--[if IE ]>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" />
+    <![endif]-->
+    <title>MySQL ::  MySQL Forums</title>
+
+    
+    <link rel="stylesheet" media="screen,projection" href="/common/css/mysql.css?v=20140618">
+    <link rel="stylesheet" media="print" href="/common/css/print.css?v=20111230">
+
+            <link rel="stylesheet" href="/templates/mysql/phorum07274.css">
+        
+    
+    
+    
+            <link rel="shortcut icon" href="/common/themes/sakila/favicon.ico">
+
+    
+        
+    
+    
+</head>
+
+<body class="forums">
+
+<div id="container">
+
+<!--UdmComment-->
+<a class="skipToContent" href="#mainContent">Skip navigation links</a>
+
+    <div id="header">
+
+    <div class="left">
+
+    <div id="logo">
+                                            <a href="http://dev.mysql.com/" title="MySQL">
+                            <img src="/common/logos/logo-mysql-110x57.png" alt="MySQL" width="110" height="57"></a>
+            </div>
+            <div id="tagline">The world's most popular open source database</div>
+
+    </div>
+
+    <div class="right">
+                <div id="login">
+            <p>
+                <a class="contact_us" href="http://www.mysql.com/about/contact/">Contact MySQL</a> |
+        
+                             <a href="https://dev.mysql.com/auth/login/?dest=http%3a%2f%2fforums.mysql.com%2F">Login</a> | <a href="https://dev.mysql.com/auth/register/">Register</a>
+                        </p>
+        </div>
+
+        <div id="search_box"> <!-- Start Search -->
+        		<form id="searchform" name="searchform" method="get" action="http://search.oracle.com/search/search">
+			<input type="text" id="q" name="q" value="Search" class="swap_value" onfocus="this.value='';">
+			<input type="hidden" name="group" value="MySQL">
+			<input type="image" src="/common/themes/sakila/search_g.png" id="go" alt="Search" title="Search">
+		    </form>        </div> <!-- End Search -->
+
+    </div>
+
+    </div> 
+
+    <!-- MySQL Navigation -->
+    <div id="nav_container">
+    
+    <div id="flags">
+        <ul>
+            <li style="position: relative; top: -5px;">
+                <!-- Icons from http://icondock.com/free/vector-social-media-icons //-->
+                <a href="http://www.facebook.com/mysql"><img class="facebook-icon" src="/common/themes/sakila/sp.gif" alt="fb" title="Join us on Facebook" width="20" height="20"></a>&nbsp;
+                <a href="https://plus.google.com/+mysql"><img class="googleplus-icon" src="/common/themes/sakila/sp.gif" alt="g+" title="Join Google+ to follow MySQL" width="20" height="20"></a>&nbsp;
+                <a href="https://twitter.com/#!/mysql"><img class="twitter-icon" src="/common/themes/sakila/sp.gif" alt="tw" title="Follow us on Twitter" width="20" height="20"></a>&nbsp;
+                <a href="http://www.youtube.com/mysqlchannel"><img class="youtube-icon" src="/common/themes/sakila/sp.gif" alt="yt" title="Visit our YouTube channel" width="20" height="20"></a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </li>
+                            
+                        </ul>
+    </div>
+
+        <div id="nav-tabs">
+    <ul>
+        <li class="off-left-end"></li>
+        <li><a href="http://www.mysql.com">MySQL.com</a></li>
+        <li class="off-mid"></li>
+        <li><a href="http://www.mysql.com/downloads/">Downloads</a></li>
+        <li class="off-mid"></li>
+        <li><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+        <li class="on-left"></li>
+        <li class="current"><a href="http://dev.mysql.com">Developer Zone</a></li>
+        <li class="on-right-end"></li>
+    </ul>
+    </div>
+    
+        <div id="mysql_menu">
+            <ul>
+	<li class="current"><a class="current " href="/">Forums</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://bugs.mysql.com/">Bugs</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/worklog/">Worklog</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://labs.mysql.com/">Labs</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/tech-resources/articles/">Articles</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://planet.mysql.com/">Planet MySQL</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://www.mysql.com/news-and-events/web-seminars/">News and Events</a>
+	
+		
+		
+	</li>
+	
+	<li class="link"><a href="http://dev.mysql.com/community/">Community</a>
+	
+		
+		
+	</li>
+	
+	<li class="link last"><a href="http://dev.mysql.com/podcasts/">Podcasts</a>
+	
+		
+		
+	</li>
+	
+</ul>
+        </div>
+
+                        <div id="no_og_sakila">&nbsp;</div>
+                    <div id="og_title">&nbsp;</div>
+        
+    </div>
+    <!-- End Navigation Container -->
+
+<!--/UdmComment-->
+
+<div class="page_container">
+
+      
+<!-- Main content -->
+
+<div id="page">
+
+            <h1 class="page_header" id="mainContent">MySQL Forums</h1>
+    
+
+
+
+
+
+	
+
+<script type="text/javascript" src="http://forums.mysql.com/javascript.php"></script>
+
+<!-- header.tpl -->
+<div align="center">
+<div class="PDDiv">
+
+
+
+
+
+<form id="header-search-form" action="search.php" method="get">
+<input type="hidden" name="forum_id" value="0">
+<input type="hidden" name="match_forum" value="ALL">
+<input type="hidden" name="match_dates" value="365">
+<input type="hidden" name="match_type" value="ALL">
+<input type="text" name="search" size="25" value="">
+<input type="submit" value="Search Forums"> <br>
+<a class="" href="http://forums.mysql.com/search.php">Advanced Search</a>
+</form>
+<br class="clear">
+
+<!-- index_new.tpl -->
+<table id="phorum-index" cellspacing="0">
+
+
+
+	<tbody><tr class="folder">
+	
+		<th class="forum-name" colspan="2">Forums</th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?3">Announcements</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?3,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">611</td>
+	<td class="forum-posts" nowrap="nowrap">702</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 11:11PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>MySQL related Product and Service announcements.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?9">MySQL Usage</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?10">Newbie</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?10,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">59,722</td>
+	<td class="forum-posts" nowrap="nowrap">178,678</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 09:08PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for New Users of MySQL.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?11">Install &amp; Repo</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?11,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">11,016</td>
+	<td class="forum-posts" nowrap="nowrap">25,510</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 02:17PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Installing and Configuring MySQL.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?169">MySQL Installer for Windows</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?169,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">322</td>
+	<td class="forum-posts" nowrap="nowrap">830</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 05:19AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Installer for Windows.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?117">Source, Builds, Binaries</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?117,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,011</td>
+	<td class="forum-posts" nowrap="nowrap">2,355</td>
+	<td class="forum-last-post" nowrap="nowrap">April 04, 2015 04:02AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for building directly from the source code.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?12">Docs</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?12,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">344</td>
+	<td class="forum-posts" nowrap="nowrap">797</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 10:15AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for ideas and feedback on MySQL Docs and translations.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?132">Quality Assurance</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?132,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,089</td>
+	<td class="forum-posts" nowrap="nowrap">1,599</td>
+	<td class="forum-last-post" nowrap="nowrap">March 24, 2015 07:53AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum to discuss quality assurance techniques, such as bug reports, test cases, code patches</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?82">MySQL Tools</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?152">MySQL Workbench</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?152,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">3,188</td>
+	<td class="forum-posts" nowrap="nowrap">8,294</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 06:41AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for New Users of MySQL Workbench.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?142">MySQL Monitoring &amp; Oracle Enterprise Manager</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?142,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">105</td>
+	<td class="forum-posts" nowrap="nowrap">231</td>
+	<td class="forum-last-post" nowrap="nowrap">November 17, 2014 05:57AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Enterprise Monitor &amp; Oracle Enterprise Manager for MySQL</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?173">MySQL Notifier</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?173,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">19</td>
+	<td class="forum-posts" nowrap="nowrap">77</td>
+	<td class="forum-last-post" nowrap="nowrap">April 09, 2015 10:07AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Notifier</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?174">MySQL for Visual Studio</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?174,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">96</td>
+	<td class="forum-posts" nowrap="nowrap">410</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 05:22AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL for Visual Studio.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?172">MySQL for Excel</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?172,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">172</td>
+	<td class="forum-posts" nowrap="nowrap">626</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 03:24PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL for Excel.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?36">MySQL Connectors &amp; Languages</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?37">Connector/ODBC</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?37,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">3,188</td>
+	<td class="forum-posts" nowrap="nowrap">7,639</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 12:27PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/ODBC</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?39">Connector/JDBC and Java</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?39,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">3,510</td>
+	<td class="forum-posts" nowrap="nowrap">8,674</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 05:07PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/JDBC and Java</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?38">Connector/NET and C#, Mono, .Net</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?38,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">4,983</td>
+	<td class="forum-posts" nowrap="nowrap">13,827</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 01:14PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/NET and C#, Mono, .Net</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?167">Connector/C++</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?167,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">437</td>
+	<td class="forum-posts" nowrap="nowrap">929</td>
+	<td class="forum-last-post" nowrap="nowrap">February 25, 2015 10:28PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/C++</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?168">Connector/C (libmysql)</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?168,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,572</td>
+	<td class="forum-posts" nowrap="nowrap">3,116</td>
+	<td class="forum-last-post" nowrap="nowrap">March 01, 2015 02:27AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/C (libmysql)</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?50">Connector/Python</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?50,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">277</td>
+	<td class="forum-posts" nowrap="nowrap">627</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 05:37AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/Python</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?175">Connector/Arduino</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?175,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">34</td>
+	<td class="forum-posts" nowrap="nowrap">150</td>
+	<td class="forum-last-post" nowrap="nowrap">March 26, 2015 07:57AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Connector/Arduino</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?51">Perl</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?51,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">582</td>
+	<td class="forum-posts" nowrap="nowrap">1,514</td>
+	<td class="forum-last-post" nowrap="nowrap">April 07, 2015 06:45PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  MySQL and Perl.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?52">PHP</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?52,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">7,567</td>
+	<td class="forum-posts" nowrap="nowrap">23,945</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 11:27AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  MySQL and PHP.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?116">Ruby</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?116,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">129</td>
+	<td class="forum-posts" nowrap="nowrap">256</td>
+	<td class="forum-last-post" nowrap="nowrap">December 03, 2014 01:36PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL and Ruby</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?49">Delphi</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?49,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">167</td>
+	<td class="forum-posts" nowrap="nowrap">372</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 04:17AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  MySQL and Delphi.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?44">JavaScript, JSON, Node.js</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?44,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">172</td>
+	<td class="forum-posts" nowrap="nowrap">391</td>
+	<td class="forum-last-post" nowrap="nowrap">March 03, 2015 05:25AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL and JavaScript, JSON, Node.js</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?91">MySQL Storage Engines</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?22">InnoDB</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?22,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">4,718</td>
+	<td class="forum-posts" nowrap="nowrap">13,362</td>
+	<td class="forum-last-post" nowrap="nowrap">April 09, 2015 11:51AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for InnoDB Storage Engine.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?21">MyISAM</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?21,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">995</td>
+	<td class="forum-posts" nowrap="nowrap">3,244</td>
+	<td class="forum-last-post" nowrap="nowrap">April 04, 2015 08:37PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MyISAM Storage Engine.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?105">Federated Storage Engine</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?105,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">170</td>
+	<td class="forum-posts" nowrap="nowrap">347</td>
+	<td class="forum-last-post" nowrap="nowrap">April 13, 2015 06:45AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Federated Storage Engine.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?112">Archive Storage Engine</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?112,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">82</td>
+	<td class="forum-posts" nowrap="nowrap">192</td>
+	<td class="forum-last-post" nowrap="nowrap">January 28, 2015 07:28AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Archive Storage Engine</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?127">CSV Storage Engine</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?127,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">42</td>
+	<td class="forum-posts" nowrap="nowrap">75</td>
+	<td class="forum-last-post" nowrap="nowrap">January 14, 2015 11:47PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for CSV Storage Engine</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?92">Memory Storage Engine</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?92,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">145</td>
+	<td class="forum-posts" nowrap="nowrap">352</td>
+	<td class="forum-last-post" nowrap="nowrap">January 08, 2015 03:18AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Memory Storage Engine.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?93">Merge Storage Engine</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?93,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">95</td>
+	<td class="forum-posts" nowrap="nowrap">263</td>
+	<td class="forum-last-post" nowrap="nowrap">March 04, 2014 03:13AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for the Merge Storage Engine.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?94">Custom Storage Engines</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?94,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">165</td>
+	<td class="forum-posts" nowrap="nowrap">315</td>
+	<td class="forum-last-post" nowrap="nowrap">March 12, 2015 08:44PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for your own Custom Storage Engines.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?150">memcached</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?150,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">117</td>
+	<td class="forum-posts" nowrap="nowrap">154</td>
+	<td class="forum-last-post" nowrap="nowrap">September 15, 2014 03:33PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for memchached as a cache and storage engine for MySQL.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?19">MySQL Technology</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?20">General</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?20,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">7,209</td>
+	<td class="forum-posts" nowrap="nowrap">20,155</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 11:11PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>The main discussion forum for MySQL.  Please use specialized forums for specific topics.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?35">Database Administration &amp; Monitoring</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?35,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">2,042</td>
+	<td class="forum-posts" nowrap="nowrap">4,403</td>
+	<td class="forum-last-post" nowrap="nowrap">April 10, 2015 02:39PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Administering and Managing MySQL.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?125">Database Design &amp; Data Modelling</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?125,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">890</td>
+	<td class="forum-posts" nowrap="nowrap">2,698</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 08:38AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum to discuss the important topic of proper schema design.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?101">Data Dictionary &amp; Information Schema</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?101,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">158</td>
+	<td class="forum-posts" nowrap="nowrap">403</td>
+	<td class="forum-last-post" nowrap="nowrap">October 01, 2014 09:10AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Data Dictionary &amp; Information Schema</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?28">Backup</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?28,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,172</td>
+	<td class="forum-posts" nowrap="nowrap">2,858</td>
+	<td class="forum-last-post" nowrap="nowrap">April 01, 2015 03:44PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Backup.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?156">Data Recovery</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?156,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">257</td>
+	<td class="forum-posts" nowrap="nowrap">470</td>
+	<td class="forum-last-post" nowrap="nowrap">April 09, 2015 11:50AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Data Recovery.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?30">Security</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?30,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">487</td>
+	<td class="forum-posts" nowrap="nowrap">951</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 09:33AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Security.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?115">Optimizer &amp; Parser</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?115,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">799</td>
+	<td class="forum-posts" nowrap="nowrap">2,693</td>
+	<td class="forum-last-post" nowrap="nowrap">March 05, 2015 05:42PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Optimizer &amp; Parser.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?24">Performance</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?24,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">3,479</td>
+	<td class="forum-posts" nowrap="nowrap">12,357</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 11:03PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Performance and Benchmarks.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?106">Partitioning</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?106,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">596</td>
+	<td class="forum-posts" nowrap="nowrap">2,090</td>
+	<td class="forum-last-post" nowrap="nowrap">April 12, 2015 09:43PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Partitioning.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?144">Fabric, Sharding, HA, Utilities</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?144,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">263</td>
+	<td class="forum-posts" nowrap="nowrap">600</td>
+	<td class="forum-last-post" nowrap="nowrap">April 08, 2015 03:12PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Fabric, Sharding, High Availability and Utilities</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?25">Cluster</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?25,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">3,295</td>
+	<td class="forum-posts" nowrap="nowrap">10,346</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 10:45AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Cluster.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?26">Replication</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?26,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">2,773</td>
+	<td class="forum-posts" nowrap="nowrap">7,751</td>
+	<td class="forum-last-post" nowrap="nowrap">April 10, 2015 09:00PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Replication.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?146">Proxy</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?146,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">678</td>
+	<td class="forum-posts" nowrap="nowrap">1,703</td>
+	<td class="forum-last-post" nowrap="nowrap">February 26, 2015 10:38PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Proxy</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?27">Synchronization</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?27,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">133</td>
+	<td class="forum-posts" nowrap="nowrap">222</td>
+	<td class="forum-last-post" nowrap="nowrap">February 02, 2015 05:27AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Synchronization</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?23">GIS</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?23,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">303</td>
+	<td class="forum-posts" nowrap="nowrap">676</td>
+	<td class="forum-last-post" nowrap="nowrap">March 19, 2015 04:26AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for OpenGIS discussions.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?107">Full-Text Search</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?107,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">484</td>
+	<td class="forum-posts" nowrap="nowrap">1,045</td>
+	<td class="forum-last-post" nowrap="nowrap">March 20, 2015 11:23PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Full-Text Search</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?103">Character Sets, Collation, Unicode</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?103,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">995</td>
+	<td class="forum-posts" nowrap="nowrap">2,672</td>
+	<td class="forum-last-post" nowrap="nowrap">April 01, 2015 03:39PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Character Sets, Collation, Unicode</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?98">Stored Procedures</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?98,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">4,042</td>
+	<td class="forum-posts" nowrap="nowrap">13,768</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 05:54AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Stored Procedures</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?100">Views</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?100,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">519</td>
+	<td class="forum-posts" nowrap="nowrap">1,541</td>
+	<td class="forum-last-post" nowrap="nowrap">April 07, 2015 10:04PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Views</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?99">Triggers</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?99,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,483</td>
+	<td class="forum-posts" nowrap="nowrap">4,268</td>
+	<td class="forum-last-post" nowrap="nowrap">April 10, 2015 06:05AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Triggers</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?119">Events (Job Scheduler)</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?119,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">164</td>
+	<td class="forum-posts" nowrap="nowrap">338</td>
+	<td class="forum-last-post" nowrap="nowrap">March 05, 2015 02:47AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Events and Scheduling</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?118">UDF</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?118,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">315</td>
+	<td class="forum-posts" nowrap="nowrap">698</td>
+	<td class="forum-last-post" nowrap="nowrap">October 23, 2014 04:41PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for User Defined Functions</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?32">Data Warehouse</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?32,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">138</td>
+	<td class="forum-posts" nowrap="nowrap">398</td>
+	<td class="forum-last-post" nowrap="nowrap">February 23, 2015 02:02PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum about MySQL used as a Data Warehouse.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?33">Analytics, Reporting, BI</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?33,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">300</td>
+	<td class="forum-posts" nowrap="nowrap">648</td>
+	<td class="forum-last-post" nowrap="nowrap">April 15, 2015 05:20PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Reporting discussions</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?58">MySQL &amp; Embedded Databases</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?58,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">234</td>
+	<td class="forum-posts" nowrap="nowrap">464</td>
+	<td class="forum-last-post" nowrap="nowrap">March 12, 2015 08:46PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL in embedded use cases in devices, appliances, applications.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?149">MySQL &amp; Virtualization</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?149,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">46</td>
+	<td class="forum-posts" nowrap="nowrap">65</td>
+	<td class="forum-last-post" nowrap="nowrap">June 15, 2013 08:52PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Virtualization discussions</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?165">MySQL &amp; Clouds</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?165,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">52</td>
+	<td class="forum-posts" nowrap="nowrap">67</td>
+	<td class="forum-last-post" nowrap="nowrap">February 11, 2015 05:55PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Cloud discussions</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?123">MySQL &amp; Storage</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?123,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">123</td>
+	<td class="forum-posts" nowrap="nowrap">200</td>
+	<td class="forum-last-post" nowrap="nowrap">December 23, 2014 10:17PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for SAN, NAS, iSCSI, RAID, etc.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?59">Migration</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?104">MySQL Workbench - Database Migration</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?104,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,100</td>
+	<td class="forum-posts" nowrap="nowrap">2,591</td>
+	<td class="forum-last-post" nowrap="nowrap">April 06, 2015 06:52PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Database Migration with MySQL Workbench.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?65">Microsoft Access</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?65,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">987</td>
+	<td class="forum-posts" nowrap="nowrap">2,662</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 11:59AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Microsoft Access migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?60">Microsoft SQL Server</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?60,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">975</td>
+	<td class="forum-posts" nowrap="nowrap">2,145</td>
+	<td class="forum-last-post" nowrap="nowrap">January 04, 2015 11:18AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  Microsoft SQL Server migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?61">Oracle</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?61,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">548</td>
+	<td class="forum-posts" nowrap="nowrap">1,313</td>
+	<td class="forum-last-post" nowrap="nowrap">April 07, 2015 03:35AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  Oracle migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?62">Sybase</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?62,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">71</td>
+	<td class="forum-posts" nowrap="nowrap">149</td>
+	<td class="forum-last-post" nowrap="nowrap">October 30, 2013 04:59PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Sybase migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?63">IBM DB2</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?63,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">81</td>
+	<td class="forum-posts" nowrap="nowrap">175</td>
+	<td class="forum-last-post" nowrap="nowrap">November 02, 2013 09:27PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for IBM DB2 migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?64">Informix</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?64,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">44</td>
+	<td class="forum-posts" nowrap="nowrap">92</td>
+	<td class="forum-last-post" nowrap="nowrap">October 27, 2013 07:58PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for  Informix migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?83">PostgreSQL</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?83,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">78</td>
+	<td class="forum-posts" nowrap="nowrap">178</td>
+	<td class="forum-last-post" nowrap="nowrap">December 05, 2014 05:41AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for PostgreSQL migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?84">Firebird</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?84,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">14</td>
+	<td class="forum-posts" nowrap="nowrap">36</td>
+	<td class="forum-last-post" nowrap="nowrap">June 28, 2013 02:12PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Firebird migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?145">SQLite</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?145,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">25</td>
+	<td class="forum-posts" nowrap="nowrap">60</td>
+	<td class="forum-last-post" nowrap="nowrap">March 06, 2014 05:29AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for SQLite migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?126">DBF, dBASE, FoxPro, Clipper, xBASE</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?126,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">104</td>
+	<td class="forum-posts" nowrap="nowrap">281</td>
+	<td class="forum-last-post" nowrap="nowrap">December 24, 2014 04:42PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for DBF, dBASE, FoxPro, Clipper, xBASE</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?79">Other Migration</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?79,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">483</td>
+	<td class="forum-posts" nowrap="nowrap">1,001</td>
+	<td class="forum-last-post" nowrap="nowrap">March 24, 2015 05:29AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for other database migration issues.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?2">Business</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?4">Licensing</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?4,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">49</td>
+	<td class="forum-posts" nowrap="nowrap">136</td>
+	<td class="forum-last-post" nowrap="nowrap">November 24, 2014 04:58PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>MySQL related Business and License discussions.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?5">Partners</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?5,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">144</td>
+	<td class="forum-posts" nowrap="nowrap">272</td>
+	<td class="forum-last-post" nowrap="nowrap">April 21, 2014 12:24AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Partners</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?6">Certification</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?6,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">351</td>
+	<td class="forum-posts" nowrap="nowrap">1,109</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 08:00AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for MySQL Certified developers and those interested in getting certified.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?8">Jobs</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?8,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">1,778</td>
+	<td class="forum-posts" nowrap="nowrap">2,435</td>
+	<td class="forum-last-post" nowrap="nowrap">April 16, 2015 04:23AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for companies looking to hire MySQL talent.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="folder">
+	
+		<th class="forum-name" colspan="2"><a href="http://forums.mysql.com/index.php?68">International</a></th>
+	
+	<th class="forum-threads">Topics </th>
+	<th class="forum-posts">Posts</th>
+	<th class="forum-last-post" width="100">Last Post</th>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?70">German</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?70,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">989</td>
+	<td class="forum-posts" nowrap="nowrap">2,354</td>
+	<td class="forum-last-post" nowrap="nowrap">March 27, 2015 03:10PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum für deutschsprachige MySQL-Anwender.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?69">French</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?69,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">274</td>
+	<td class="forum-posts" nowrap="nowrap">905</td>
+	<td class="forum-last-post" nowrap="nowrap">February 11, 2015 06:49AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Pour les utilisateurs MySQL de langue française.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?129">Italian</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?129,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">294</td>
+	<td class="forum-posts" nowrap="nowrap">560</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 12:51AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum per gli utenti MySQL di lingua Italiana.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?71">Spanish</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?71,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">2,184</td>
+	<td class="forum-posts" nowrap="nowrap">5,860</td>
+	<td class="forum-last-post" nowrap="nowrap">April 14, 2015 04:47PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Foro para los usuarios de lengua española.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?72">Portuguese</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?72,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">162</td>
+	<td class="forum-posts" nowrap="nowrap">241</td>
+	<td class="forum-last-post" nowrap="nowrap">March 31, 2015 07:37AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Foro para usuários da língua portuguêsa.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?78">Russian</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?78,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">129</td>
+	<td class="forum-posts" nowrap="nowrap">181</td>
+	<td class="forum-last-post" nowrap="nowrap">December 17, 2014 12:03PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Русскоязычный форум пользователей MySQL.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?131">Serbian/Croatian/Bosnian</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?131,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">36</td>
+	<td class="forum-posts" nowrap="nowrap">67</td>
+	<td class="forum-last-post" nowrap="nowrap">January 04, 2015 02:21PM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum za MySQL korisnike iz Srbije, Hrvatske i Bosne i Hercegovine</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?147">Turkish</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?147,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">68</td>
+	<td class="forum-posts" nowrap="nowrap">128</td>
+	<td class="forum-last-post" nowrap="nowrap">February 25, 2015 06:18AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Türkçe konuşan MySQL kulanıcıların forumu</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?74">Chinese</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?74,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">83</td>
+	<td class="forum-posts" nowrap="nowrap">161</td>
+	<td class="forum-last-post" nowrap="nowrap">March 04, 2015 01:26AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>MySQL 中文用户论坛</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?73">Japanese</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?73,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">12</td>
+	<td class="forum-posts" nowrap="nowrap">20</td>
+	<td class="forum-last-post" nowrap="nowrap">March 31, 2014 10:59AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Japanese-speaking MySQL users.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+
+	<tr class="forum">
+		<td class="forum-name">
+			<a href="http://forums.mysql.com/list.php?75">Korean</a>
+		</td>
+		<td>
+			
+			<a href="http://forums.mysql.com/feed.php?75,type=rss">RSS</a>
+			
+		</td>
+
+	<td class="forum-threads" nowrap="nowrap">6</td>
+	<td class="forum-posts" nowrap="nowrap">19</td>
+	<td class="forum-last-post" nowrap="nowrap">November 26, 2014 04:30AM</td>
+
+	</tr>
+	<tr class="forum-bottom">
+		<td class="forum-description" style="font-size:14px;" colspan="2">
+			<p>Forum for Korean-speaking MySQL users.</p>
+	</td>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+
+
+</tbody></table>
+
+<!-- footer.tpl -->
+<div class="PhorumFooterPlug" align="center"><a href="http://phorum.org/">powered by phorum</a>
+
+</div>
+</div>
+
+
+
+
+
+
+</div> <!--End Container -->
+
+
+
+<div class="callout">
+<p>Content reproduced on this site is the property of the respective copyright holders. It is not reviewed in advance by Oracle and does not necessarily represent the opinion of Oracle or any other party.</p>
+</div>
+
+ </div> 
+</div> 
+<div id="footer">
+    <div class="five-col">
+        <div class="links">
+            <ul>
+                <li class="top"><a href="http://dev.mysql.com">Developer Zone</a></li>
+                <li><a href="http://dev.mysql.com/articles/">Developer Articles</a></li>
+                <li><a href="http://forums.mysql.com/">Forums</a></li>
+                <li><a href="http://bugs.mysql.com/">Bugs</a></li>
+                <li><a href="http://dev.mysql.com/worklog/">Worklog</a></li>
+                                <li><a href="http://planet.mysql.com/">Planet MySQL</a></li>
+                            </ul>
+        </div>
+    
+        <div class="links">
+            <ul>
+                <li class="top"><a href="http://dev.mysql.com/downloads/">Downloads</a></li>
+                <li><a href="http://dev.mysql.com/downloads/mysql/">MySQL Community Server</a></li>
+                <li><a href="http://dev.mysql.com/downloads/cluster/">MySQL Cluster</a></li>
+                <li><a href="http://dev.mysql.com/downloads/fabric/">MySQL Fabric</a></li>
+                <li><a href="http://dev.mysql.com/downloads/utilities/">MySQL Utilities</a></li>
+                <li><a href="http://dev.mysql.com/downloads/workbench/">MySQL Workbench</a></li>
+            </ul>
+        </div>
+
+
+        <div class="links">
+            <ul>
+                <li class="top"><a href="http://dev.mysql.com/doc/">Documentation</a></li>
+                <li><a href="http://dev.mysql.com/doc/">MySQL Reference Manuals</a></li>
+                <li><a href="http://dev.mysql.com/doc/index-gui.html">MySQL Workbench</a></li>
+                <li><a href="http://dev.mysql.com/doc/index-expert.html">Expert Guides</a></li>
+                <li><a href="http://dev.mysql.com/doc/index-topic.html">Topic Guides</a></li>
+                <li><a href="http://dev.mysql.com/doc/index-cluster.html">MySQL Cluster</a></li>
+            </ul>
+        </div>
+
+
+        <div class="links">
+            <ul>
+                <li class="top"><a href="http://www.mysql.com/about/">About MySQL</a></li>
+                <li><a href="http://www.mysql.com/about/contact/">Contact Us</a></li>
+                                 <li><a href="http://www.mysql.com/buy-mysql/">How to Buy</a></li>
+                <li><a href="http://www.mysql.com/partners/">Partners</a></li>
+                <li><a href="http://www.mysql.com/about/jobs/">Job Opportunities</a></li>
+                <li><a href="http://www.mysql.com/sitemap.html">Site Map</a></li>
+            </ul>
+        </div>
+    
+        <div class="links">
+            <ul>
+                <li class="top"><a href="http://www.mysql.com/about/legal/">Legal</a></li>
+                <li><a href="http://www.mysql.com/about/legal/">Legal Policies</a></li>
+                <li><a href="http://www.oracle.com/us/legal/privacy/index.htm">Your Privacy Rights</a></li>
+                <li><a href="http://www.oracle.com/us/legal/terms/index.html">Terms of Use</a></li>
+                <li><a href="http://www.oracle.com/us/legal/third-party-trademarks/index.html">Trademark Policy</a></li>
+                <li><a href="http://www.oracle.com/technetwork/community/oca-486395.html">Contributor Agreement</a></li>
+            </ul>
+        </div>
+    
+                <div id="search" class="English (American)">
+                <form id="footer_search" action="http://search.oracle.com/search/search" method="get">
+            <input type="text" id="f_q" name="q" value="" class="swap_value">
+	    <input type="hidden" name="group" value="MySQL">
+	    <input type="image" src="/common/themes/sakila/footer_search_g.png" id="f_go" alt="Search" title="Search">
+        </form>        </div>
+            
+    </div>
+</div><!-- End Footer -->
+
+<div id="copyright-oracle"><a href="http://www.oracle.com/"><img src="/common/logos/logo-oracle-red-91x22.gif" alt="Oracle" width="91" height="22"></a>&nbsp;&nbsp;<span>© 2015, Oracle Corporation and/or its affiliates</span></div>
+
+
+<script src="/common/js/metrics/s_code_remote.js"></script><script type="text/javascript" src="http://www.mysql.com/common/js/metrics/metrics_group1.js"></script>
+
+
+</div></body></html>

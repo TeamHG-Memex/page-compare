@@ -1,0 +1,863 @@
+<!DOCTYPE html><html lang="en"><head><script async="" src="https://account.xbox.com/en-US/ShellData?_=1429159065829"></script>
+<!--
+    s Qtkg+G4BPiJqG4pvbT+FgA==
+-->
+
+        <meta http-equiv="X-UA-Compatible" content="IE=Edge"><meta name="robots" content="index,follow"><meta name="GENERATOR" content="7.x Production"><link rel="alternate" type="application/rss+xml" title="Site Root (RSS 2.0)" href="http://forums.xbox.com/rss.aspx">
+
+            <link rel="stylesheet" href="/themes/generic/css/layout.css?LastChanged=635513014600000000" type="text/css" media="screen">
+        <script type="text/javascript" src="/utility/jquery/jquery-1.7.2.min.js?LastChanged=635513014600000000"></script><script type="text/javascript" src="/utility/jquery/telligent.glow.min.js?LastChanged=635513014600000000"></script><script type="text/javascript" src="/utility/jquery/jquery.validate.min.js?LastChanged=635513014600000000"></script><script type="text/javascript">
+// <![CDATA[
+try { jQuery.extend(jQuery.validator.messages,{required:'This field is required.',remote:'Please fix this field.',date:'Please enter a valid date.',dateISO:'Please enter a valid date (ISO).',number:'Please enter a valid number.',digits:'Please enter only digits.',creditcard:'Please enter a valid credit card number.',equalTo:'Please enter the same value again.',accept:'Please enter a value with a valid extension.',maxlength:jQuery.validator.format('Please enter no more than {0} characters.'),minlength:jQuery.validator.format('Please enter at least {0} characters.'),rangelength:jQuery.validator.format('Please enter a value between {0} and {1} characters long.'),range:jQuery.validator.format('Please enter a value between {0} and {1}.'),max:jQuery.validator.format('Please enter a value less than or equal to {0}.'),min:jQuery.validator.format('Please enter a value greater than or equal to {0}.')}); } catch(e) { };
+// ]]>
+</script><script type="text/javascript" src="/utility/jquery/telligent.evolution.min.js?LastChanged=635513014600000000"></script><script type="text/javascript" src="/utility/images/glow/plupload.silverlight.js?LastChanged=635513014600000000"></script><script type="text/javascript">
+// <![CDATA[
+try { jQuery.telligent.evolution.site.configure({baseUrl:'\/',monthNames:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],dayNames:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],authorizationCookieName:'AuthorizationCookie',defaultErrorMessage:'An error occurred.  Please try again or contact your administrator.',defaultMultiErrorMessagePrefix:'The following errors occurred:  ',silverlightFileUploadEnabled:true});
+jQuery.extend($.fn.evolutionUserFileTextBox.defaults,{removeText:'Remove',selectText:'Select\/Upload...',noFileText:'No File Selected'});
+jQuery.telligent.evolution.navigationConfirmation.configure({message:'==============================\r\nUnless you save before leaving this page, you will lose any changes you have made.\r\n=============================='});
+jQuery.telligent.evolution.validation.registerExtensions({passwordInvalidMessage:'Password contains invalid chars ...',passwordRegex:'^.*$',emailInvalidMessage:'Your email address is invalid.',emailRegex:'^\\w+([-+.\\w]+)*@\\w+([-.\\w]+)*\\.\\w+([-.\\w]+)*$',usernameInvalidMessage:'Your sign in name does not meet the requirements for this site.',usernameRegex:'^[a-zA-Z0-9_\\- @\\.]+$',emailsInvalidMessage:'One or more emails is invalid',urlInvalidMessage:'URL not in correct format',urlRegex:'^((http|https|mailto|mms):|\/|#|~\/)'});
+jQuery.extend(jQuery.fn.evolutionLike.defaults,{likeText:'Like',unlikeText:'Unlike',modalTitleText:'People who like this',modalShowMoreText:'Show More',whoLikesOtherText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> likes this',whoLikesOtherTwoText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> and <span class=\"who-likes\">1 other<\/span> like this',whoLikesOtherMultipleText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> and <span class=\"who-likes\">{count} others<\/span> like this',whoLikesAccessingText:'You like this',whoLikesAccessingTwoText:'You and <span class=\"who-likes\">1 other<\/span> like this',whoLikesAccessingMultipleText:'You and <span class=\"who-likes\">{count} others<\/span> like this'});
+jQuery.extend(jQuery.fn.evolutionInlineTagEditor.defaults,{editButtonText:'Edit tags',selectTagsText:'Select tags',saveTagsText:'Save',cancelText:'Cancel'});
+jQuery.extend(jQuery.fn.evolutionStarRating.defaults,{titles:['Terrible','Poor','Fair','Average','Good','Excellent'],ratingMessageFormat:'Average rating: {rating} out of {count} ratings.'});
+jQuery.extend(jQuery.fn.evolutionModerate.defaults,{moderateLinkText:'moderate',reportLinkText:'Flag as spam\/abuse',reportedLinkText:'Flagged as spam\/abuse',reportedNotificationMessageText:'{NAME}\'s post has been flagged. <strong>Thank you for your feedback.<\/strong>'});
+} catch(e) { };
+// ]]>
+</script><script type="text/javascript">
+(function($){
+$.telligent.evolution.ui.components['forumreplystory-parent']  = {
+	add: function(elm, options) {
+        var elm = $(elm), parent = null;
+		elm.bind('click', function(e){
+            e.preventDefault();
+			parent = parent || $('#' + elm.data('parent'));
+            if(parent.is(':visible')) {
+                parent.stop().slideUp(150);
+                elm.html('View original post');
+            } else {
+                parent.stop().slideDown(150);
+                elm.html('Hide original post');
+            }
+		});
+	}
+};
+}(jQuery));
+</script><script type="text/javascript">
+(function($){
+$.telligent.evolution.ui.components['wikipagestory-revisions']  = {
+	add: function(elm, options) {
+        var elm = $(elm), revisions;
+		elm.bind('click', function(e){
+			revisions = revisions || $('#' + elm.data('revisions'));
+            e.preventDefault();
+            if(revisions.is(':visible')) {
+                revisions.stop().slideUp(150);
+                elm.html('Show revision history');
+            } else {
+                revisions.stop().slideDown(150);
+                elm.html('Hide revision history');
+            }
+		});
+	}
+};
+}(jQuery));
+</script><script type="text/javascript">(function($){ $.telligent.evolution.media.defaults.endpoint = 'http://forums.xbox.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.FileViewerEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.15.38141%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.preview.defaults.endpoint = 'http://forums.xbox.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.WebPreviewEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.15.38141%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.language.defaults.dateEndpoint = 'http://forums.xbox.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.DateFormattingEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.15.38141%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="shortcut icon" type="image/ico" href="http://www.xbox.com/shell/images/favicon.ico">
+
+<link href="http://forums.xbox.com/shell/css/gridlayout.css?v=1321016" rel="stylesheet" type="text/css">
+<link href="http://forums.xbox.com/shell/css/xboxv3.css?v=1321016" rel="stylesheet" type="text/css">
+<link href="http://forums.xbox.com/shell/css/shellstyles.css?v=1321016" rel="stylesheet" type="text/css">
+<link href="http://forums.xbox.com/shell/css/jquery-ui-theme.css?v=1321016" rel="stylesheet" type="text/css">
+
+<link media="screen,print" href="http://forums.xbox.com/static/css/screen.css" rel="stylesheet" type="text/css">
+<link media="screen,print" href="http://forums.xbox.com/static/css/xb_overrides.css" rel="stylesheet" type="text/css">
+
+<link href="http://forums.xbox.com/shell/css/shell.css?v=1321016" rel="stylesheet" type="text/css">
+
+<script>
+            
+            (function () {
+                var html5Elements = ['article', 'section', 'header', 'nav', 'footer', 'aside'];
+                for (var i = 0; i < html5Elements.length; i++) {
+                    document.createElement(html5Elements[i]);
+                }
+            })();
+        
+            
+            try {
+                var utcOffsetMinutes = new Date().getTimezoneOffset() * -1;
+                setCookie("UtcOffsetMinutes", utcOffsetMinutes, 30);
+            } catch (e) { }
+ </script>
+
+        
+ <script src="http://forums.xbox.com/shell/js/its.amd.js?v=12121035"></script>
+  <script src="http://forums.xbox.com/shell/js/shiny.js?v=12121035"></script>
+  <script src="http://forums.xbox.com/shell/js/general.js?v=12121035"></script>
+        <link type="text/css" rel="stylesheet" href="http://forums.xbox.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000006c60cec7-s-7e987e474b714b01ba29b4336720c446-cssfiles-http-forumsxboxcom-80/analyticswidget.css" media="screen,print"><!--[if lte IE 6]><link type="text/css" rel="stylesheet" href="http://forums.xbox.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000006c60cec7-s-7e987e474b714b01ba29b4336720c446-ie6cssfiles-http-forumsxboxcom-80/ie6.css" media="screen,print" /><![endif]--><script type="text/javascript" src="http://forums.xbox.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000006c60cec7-s-7e987e474b714b01ba29b4336720c446-jsfiles-http-forumsxboxcom-80/analytics.js"></script><link type="text/css" rel="stylesheet" href="http://forums.xbox.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000006c60cec7-s-7e987e474b714b01ba29b4336720c446-printcssfiles-http-forumsxboxcom-80/print.css" media="print">
+          <link type="text/css" rel="stylesheet" href="/themes/generic/css/dynamic-style.aspx?PreviewKey=0&amp;Theme=7e987e474b714b01ba29b4336720c446" media="screen,print">
+        <title>
+	Home - Xbox.com Forums
+</title></head>
+	<body spellcheck="true" class="en-us silverlight-unsupported">
+		<form name="aspnetForm" method="post" action="/" id="aspnetForm" novalidate="novalidate">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTEzMDQ4MDUwNDJkZH3QD/H50Ks8hS/2oVHAuGa251TZ">
+</div>
+
+
+<script src="/WebResource.axd?d=tenzrq2N_HfbFs_jA9Q93dcjFIfe0wRxrLyH5wwvA7UFDDhPZ977POBN4r7lkNUHt4uMhOfWWBcqqoTaXQ17wQAZ5H2TimbhzcXVb1mD09_G039-TLHzENdLv99OVH3V42xgGnrNkX7rtTv5mNfLv7zFfRWJdoSjta0opvTxIUkd1PiFnVb5u-FHfKKDP4XxJpOBRPtvy0snst5hjiWi5Urlyvg1&amp;t=635513014580000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=kB6x0vDweH94LnvzNtjAY92U7YZ5LQ1tT0u1Q1t2LM66C_MLfOfofADixwagYMdd4mfoa5HHh_3sgdsRzLy4pknWosac5UeJfPCiwxG4pwzEAaf3XJQ9cRSLzeBlOfyCj_nYMdAeC9FH8sHYXUGgWPascRw3OijLcLF1h-MeirdmW_ti0&amp;t=635513014580000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=UAS3N7xvAhjfWMtTAZICpFZnGb1Mlr18Pkbq_I_FmH586Apsbj8xGJChABe7qniabpgDIb1Tvh_bw2Os7G6e6dZD0gi0DRZAzWzV2wZrG_fINfmO3VhoRmVnuRgeRDCiRw81dZFyeAleoNGP95AoNkFvsp-uf8hZUUeZjChN0SwYm2sUwqdSPHb8NRpusqFPrgZqAw2&amp;t=635513014580000000" type="text/javascript"></script>
+<div>
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="C1A1FB6D">
+</div>
+			
+                
+            
+            
+                <div class="header-fragments-header"></div>
+<div class="header-fragments" id="ctl00_header_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content header-top-split-content-footer" id="ctl00_header_ctl00_layout">
+<div class="layout-region header" id="ctl00_header_ctl00_header">
+<div class="layout-region-inner header"><div class="content-fragment scripted-content-fragment no-wrapper" id="header-22">
+<div class="content-fragment-content">
+
+
+<!--div>
+    header url: header?searchscope=forums&returnUrl=http://forums.xbox.com/</br>
+    AbsoluteUrl: http://forums.xbox.com/<br/>
+    URL: /<br/>
+    ReturnUrl: $core_v2_page.ReturnUrl<br/>
+</div-->
+<div class="xbox-header"></div>
+
+<script>
+    var xboxComShellData = {};
+    xboxComShellData.searchScopeOptions = [];
+    xboxComShellData.version = "1504.7009.0.0";
+            
+            xboxComShellData.searchScopeOptions.push({
+            value: "http://www.xbox.com/en-US/Search?q={0}#All",
+            context: "Search All",
+            label: "In All",
+            id: "All",
+            enumValue: 0
+        });
+        
+            
+            xboxComShellData.searchScopeOptions.push({
+            value: "http://www.xbox.com/en-US/Search?q={0}#General",
+            context: "Search General",
+            label: "In General",
+            id: "General",
+            enumValue: 10
+        });
+        
+            
+            xboxComShellData.searchScopeOptions.push({
+            value: "http://www.xbox.com/en-US/Search?q={0}#Games",
+            context: "Search Games",
+            label: "In Games",
+            id: "Games",
+            enumValue: 20
+        });
+        
+            
+            xboxComShellData.searchScopeOptions.push({
+            value: "http://www.xbox.com/en-US/Search?q={0}#Support",
+            context: "Search Support",
+            label: "In Support",
+            id: "Support",
+            enumValue: 30
+        });
+        
+            
+            xboxComShellData.searchScopeOptions.push({
+            value: "http://www.xbox.com/en-US/Search?q={0}#Forums",
+            context: "Search Forums",
+            label: "In Forums",
+            id: "Forums",
+            enumValue: 40
+        });
+        
+
+    xboxComShellData.defaultOptionIndex = 4;
+</script>
+<div id="BodyHeader" class="container">
+    <div id="shellHeaderContent">
+    <div id="shellLogoArea">
+        <a href="http://www.xbox.com/?xr=mebarnav">
+            <img id="shellLogo" src="/shell/images/shell/XboxLogo.png">
+        </a>
+    </div>
+    <div id="shellNavigationArea">
+        <ul class="navigationElements">
+        <li>
+            <a href="http://www.xbox.com/en-US/xbox-one?xr=shellnav" name="en_US_0" aria-haspopup="true">Xbox One</a>
+                <ul>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-one?xr=shellnav" name="en_US_0_0">Meet Xbox One</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-one/consoles?xr=shellnav" name="en_US_0_1">Consoles</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-one/accessories?xr=shellnav" name="en_US_0_2">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/windows-10?xr=shellnav" name="en_US_0_3">Windows 10</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-one/consoles?xr=shellnav" name="en_US_0_4">Buy Now</a>
+                        </li>
+                </ul>
+        </li>
+        <li>
+            <a href="http://www.xbox.com/en-US/xbox-360?xr=shellnav" name="en_US_1" aria-haspopup="true">Xbox 360 </a>
+                <ul>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-360?xr=shellnav" name="en_US_1_0">Meet Xbox 360</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-360/consoles?xr=shellnav" name="en_US_1_1">Consoles</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-360/accessories?xr=shellnav" name="en_US_1_2">Accessories</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-360/consoles?xr=shellnav" name="en_US_1_3">Buy Now</a>
+                        </li>
+                </ul>
+        </li>
+        <li>
+            <a href="http://www.xbox.com/en-US/live?xr=shellnav" name="en_US_2" aria-haspopup="true">Xbox Live Gold</a>
+                <ul>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/live?xr=shellnav" name="en_US_2_0">Join Xbox Live Gold</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/live/games-with-gold?xr=shellnav" name="en_US_2_1">Games with Gold</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/live/deals-with-gold?xr=shellnav" name="en_US_2_2">Deals with Gold</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/live/rewards?xr=shellnav" name="en_US_2_3">Xbox Live Rewards</a>
+                        </li>
+                        <li>
+                            <a href="https://account.xbox.com/en-US/PaymentAndBilling/RedeemCode?xr=shellnav" name="en_US_2_4">Redeem Code</a>
+                        </li>
+                </ul>
+        </li>
+        <li>
+            <a href="http://www.xbox.com/en-US/games/xbox-one?xr=shellnav" name="en_US_3" aria-haspopup="true">Games</a>
+                <ul>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/games/xbox-one?xr=shellnav" name="en_US_3_0">Xbox One</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/games/xbox-360?xr=shellnav" name="en_US_3_1">Xbox 360</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/games/windows?xr=shellnav" name="en_US_3_2">Windows</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/games/windows-phone?xr=shellnav" name="en_US_3_3">Windows Phone</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/promotions/sales/sales-and-specials?xr=shellnav" name="en_US_3_4">Sales &amp; Specials</a>
+                        </li>
+                </ul>
+        </li>
+        <li>
+            <a href="http://www.xbox.com/en-US/entertainment?xr=shellnav" name="en_US_4" aria-haspopup="true">Entertainment</a>
+                <ul>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/music?xr=shellnav" name="en_US_4_0">Xbox Music</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/video?xr=shellnav" name="en_US_4_1">Xbox Video</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/entertainment/nfl?xr=shellnav" name="en_US_4_2">NFL on Xbox</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/xbox-one/games/xbox-fitness?xr=shellnav" name="en_US_4_3">Xbox Fitness</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/entertainment/xbox-one/live-apps?xr=shellnav" name="en_US_4_4">Xbox One Apps</a>
+                        </li>
+                        <li>
+                            <a href="http://www.xbox.com/en-US/entertainment/xbox-360/live-apps?xr=shellnav" name="en_US_4_5">Xbox 360 Apps</a>
+                        </li>
+                </ul>
+        </li>
+        <li>
+            <a href="http://support.xbox.com/?xr=shellnav" name="en_US_5" aria-haspopup="true">Support</a>
+                <ul>
+                        <li>
+                            <a href="http://support.xbox.com/browse/xbox-one?xr=shellnav" name="en_US_5_0">Xbox One</a>
+                        </li>
+                        <li>
+                            <a href="http://support.xbox.com/browse/xbox-360?xr=shellnav" name="en_US_5_1">Xbox 360</a>
+                        </li>
+                        <li>
+                            <a href="http://support.xbox.com/browse/billing?xr=shellnav" name="en_US_5_2">Billing</a>
+                        </li>
+                        <li>
+                            <a href="http://support.xbox.com/browse/my-account?xr=shellnav" name="en_US_5_3">My account</a>
+                        </li>
+                        <li>
+                            <a href="http://support.xbox.com/browse/xbox-on-other-devices?xr=shellnav" name="en_US_5_4">Xbox on other devices</a>
+                        </li>
+                        <li>
+                            <a href="http://forums.xbox.com/?xr=shellnav" name="en_US_5_5">Xbox Forums</a>
+                        </li>
+                        <li>
+                            <a href="http://support.xbox.com/error-code-lookup?xr=shellnav" name="en_US_5_6">Error &amp; Status Code Search</a>
+                        </li>
+                </ul>
+        </li>
+</ul>
+
+        <div id="shellSearchContainer">
+    <a href="#"><img class="searchIcon" src="/shell/images/shell/SearchIcon.png"></a>
+    <div id="searchBoxWrapper">
+        <div id="searchTextContainer">
+            <input type="text" id="searchTextBox" tabindex="-1" maxlength="200" name="q" data-url="http://www.xbox.com/en-US/Search?q={0}#All">
+            <div id="searchCloseIcon"></div>
+        </div>
+    </div>
+</div>
+
+    </div>
+
+
+<div id="mebarArea" aria-haspopup="true" class="signIn">
+    <div id="SignedInExperience">
+        <div id="mebar">
+            <div class="gamerPic" id="gamerpic">
+                <a href="#">
+                    <img class="headShot" id="headShot" src="/shell/images/shell/Gamer-Signedout.jpg">
+                </a>
+            </div>
+            <div class="gamerInfo">
+                <ul id="infoContainer">
+                <li class="gamerStat" id="gamerStat">
+                    <a href="#">Loading...</a>
+                </li>
+                <li class="accountLink"><a href="https://account.xbox.com:443/en-US/?xr=mebarnav">My Account</a></li>
+            </ul>
+            </div>
+        </div>
+        <ul class="mebarList" style="display: none;">
+            
+            <li class="mebarListItem"><a href="https://account.xbox.com/en-US/Social?xr=mebarnav">Home</a></li>
+            <li class="mebarListItem"><a href="https://account.xbox.com/en-US/Profile?xr=mebarnav">Profile</a></li>
+            <li class="mebarListItem"><a href="https://account.xbox.com/en-US/Friends?xr=mebarnav">Friends<div class="stausContainer">
+                <img class="statusIcon" src="/shell/images/shell/FriendsIcon.png">
+                <span id="onlineFriendsCount">0</span>
+            </div>
+            </a></li>
+            <li class="mebarListItem"><a href="https://account.xbox.com/en-US/Messages?xr=mebarnav">Messages<div class="stausContainer">
+                <img class="statusIcon" src="/shell/images/shell/MailIcon.png">
+                <span id="messageCounts">0</span>
+            </div>
+            </a></li>
+            
+            <li class="separator">
+                <hr>
+            </li>
+            <li class="mebarListItem"><a href="https://account.xbox.com:443/en-US/PaymentAndBilling/RedeemCode?xr=mebarnav">Redeem Code</a></li>
+            <li class="separator">
+                <hr>
+            </li>
+            <li class="mebarListItem"><a name="RpsSignInLink" href="https://account.xbox.com/Account/Signout?returnUrl=https%3a%2f%2flive-origin.xbox.com%2fen-US%2fRemoteShell%2fheader%3fsearchscope%3dforums%26returnUrl%3dhttp%3a%2f%2fforums.xbox.com%2f">Sign Out</a></li>
+        </ul>
+
+        <script type="text/javascript">
+            //<![CDATA[
+            var checkReadyCount = 0;
+            function DisplayMebarList() {
+                if (currentUser.isReady) {
+                    if (!currentUser.isSignedIn) {
+                        ShowSignIn();
+                    }
+                } else {
+                    // Check ready status with max 5 seconds in case there are some exception to get ready status
+                    if (checkReadyCount > 100) {
+                        return;
+                    }
+                    setTimeout("DisplayMebarList()", 50);
+                }
+            };
+            function LoadHeaderMeBar() {
+                var dataScriptTag = "<script src=\"" + "https://account.xbox.com/en-US/ShellData" + "\" language=\"javascript\" type=\"text/javascript\"></scr" + "ipt>";
+                $("#MeBarDataLoader").html(dataScriptTag);
+                DisplayMebarList();
+            };
+
+            function ShowSignIn() {
+                $("#mebarArea").removeClass("signIn").addClass("signOut");
+                $("#SignedInExperience").hide();
+                $("#SignedOutExperience").show();
+            }
+            currentUser.isSignedIn = false;
+
+            //load instead of ready to postpone execution until after the hero and other images are loaded to avoid blocking page interaction
+            $(window).load(LoadHeaderMeBar);
+            //]]>
+        </script>
+        <div id="MeBarDataLoader"></div>
+    </div>
+    <div id="SignedOutExperience" style="display: none;">
+        <div id="mebar">
+            <div class="gamerInfo">
+                <ul id="infoContainer">
+                    <li class="gamerStat" id="gamerStat">
+                        <a name="RpsSignInLink" href="https://account.xbox.com/Account/Signin?returnUrl=http://forums.xbox.com/">Sign In</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <ul class="mebarList">
+        </ul>
+    </div>
+</div>
+</div>
+<script type="text/javascript">
+    //<![CDATA[
+    $(function () {
+        InitializeMobileLink("#MobileVersionLinkArea", "desktopVersion", "mobileOverride");
+    });
+    //]]>
+</script>
+
+</div>
+
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment bread-crumbs no-wrapper" id="header-23">
+<div class="content-fragment-content">
+
+
+<div class="breadcrumb-list-header"></div>
+<div class="breadcrumb-list">
+	<span class="breadcrumb-item"><a href="/" class="internal-link view-home"><span></span>Home</a></span>
+
+	
+	</div>
+<div class="breadcrumb-list-footer"></div>
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+<div class="layout-region right-sidebar empty" id="ctl00_header_ctl00_right-sidebar">
+<div class="layout-region-inner right-sidebar"></div>
+</div>
+<div class="layout-region content empty" id="ctl00_header_ctl00_content">
+<div class="layout-region-inner content"></div>
+</div>
+<div class="layout-region footer" id="ctl00_header_ctl00_footer">
+<div class="layout-region-inner footer"><div class="content-fragment scripted-content-fragment no-wrapper-with-spacing" id="header-24">
+<div class="content-fragment-content">
+
+      
+      
+      <div class="site-title">
+            <h1>Xbox Forums</h1>
+      </div>
+    </div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment navigation-group no-wrapper" id="header-25">
+<div class="content-fragment-content">
+
+	<div id="header-25_parentGroupListContainer" class="parent-container" style="width:100%;">
+		<div class="parent-sub-container">
+			<div class="navigation-list-header parent"></div>
+			<ul class="navigation-list parent">
+				<li class="navigation-item" style="display:none;"><a href="/">Home</a></li>
+				                                                                                           <!-- <div>Cookie Value: $core_v2_page.GetCookieValue("defCulture", "%{ cookieName = 'defCulture' }")</div> -->
+                                                                                        
+                                                            <li class="navigation-item with-children entry" style=""><a href="http://forums.xbox.com/xbox_forums/default.aspx" class="internal-link view-group" id="Group-3"><span></span>Xbox Forums</a></li>
+                    				                                            <li class="navigation-item with-children entry" style=""><a href="http://forums.xbox.com/gfw/default.aspx" class="internal-link view-group" id="Group-103"><span></span>PC Games</a></li>
+                    				                                            <li class="navigation-item with-children entry" style=""><a href="http://forums.xbox.com/mobile_games/default.aspx" class="internal-link view-group" id="Group-1154"><span></span>Mobile Games</a></li>
+                    				                								<li class="navigation-item last" style="display: none; "><a class="internal-link view-more" href="#" id="Group-More">More ...</a></li>
+			</ul>
+			<div class="navigation-list-footer parent"></div>
+		</div>
+	</div>
+<!-- <div>Language: en</div> -->
+
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div><div class="header-fragments-footer"></div>
+            
+			
+    <div class="content-fragment-page common-home" id="ctl00_content_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content header-top-content-left-sidebar-right" id="ctl00_content_ctl00_layout">
+<div class="layout-region header" id="ctl00_content_ctl00_header">
+<div class="layout-region-inner header"><div class="content-fragment title no-wrapper" id="fragment-7444">
+<div class="content-fragment-content">
+
+	
+	<h1 class="title">Home</h1>
+			</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+<div class="layout-region right-sidebar" id="ctl00_content_ctl00_right-sidebar">
+<div class="layout-region-inner right-sidebar"><div class="content-fragment featured-content-list no-wrapper-with-spacing with-header" id="fragment-7445">
+<div class="content-fragment-header"><div>
+Featured Content
+	<a href="/featuredrss.aspx" class="internal-link rss"><span></span>Site Root</a>
+	</div></div>
+<div class="content-fragment-content">
+
+
+	<div class="content-list-header"></div>
+	<ul class="content-list itemcount-3 layout-sidebar">
+
+	
+			
+	<li class="content-item  first evolution2-first fiji-first">
+		<div class="abbreviated-post-header"></div>
+		<div class="abbreviated-post post-content user-defined-markup">
+			<h4 class="post-name">
+				<a href="http://forums.xbox.com/xbox_forums/forum_faq/f/6/t/1948315.aspx" class="internal-link view-post">
+					<span></span>Join the Xbox Community Ambassadors today!
+				</a>
+			</h4>
+
+			
+			<div class="evolution2-post-author-date fiji-post-author-date">
+				<div class="post-date">
+					<span class="value">14 days ago</span>
+				</div>
+				<div class="post-author">
+					<span class="evolution2-post-author-by fiji-post-author-by">by</span>
+					<span class="user-name">
+													<a href="/members/Mister-Fizzle/default.aspx" class="internal-link view-user-profile" core_userinfopopup="true">
+								<span></span>Mister Fizzle
+							</a>
+											</span>
+				</div>
+			</div>
+
+									
+			What is the Xbox Community Level Program? 
+ Xbox Community Level is a program that recognizes and rewards good behaviors in the Xbox Live Community. Our...
+		</div>
+		<div class="abbreviated-post-footer"></div>
+	</li>
+
+	
+			</ul>
+		<ul class="content-list evolution2-featured-content-list-3 fiji-featured-content-list-3 itemcount-3 layout-sidebar">
+	
+		
+	<li class="content-item ">
+		<div class="abbreviated-post-header"></div>
+		<div class="abbreviated-post post-content user-defined-markup">
+			<h4 class="post-name">
+				<a href="http://forums.xbox.com/xbox_forums/xbox_feedback/f/2602/t/1770561.aspx" class="internal-link view-post">
+					<span></span>Introducing Feedback.Xbox.com
+				</a>
+			</h4>
+
+			
+			<div class="evolution2-post-author-date fiji-post-author-date">
+				<div class="post-date">
+					<span class="value">10 months ago</span>
+				</div>
+				<div class="post-author">
+					<span class="evolution2-post-author-by fiji-post-author-by">by</span>
+					<span class="user-name">
+													<a href="/members/Misses-Joust/default.aspx" class="internal-link view-user-profile" core_userinfopopup="true">
+								<span></span>Misses Joust
+							</a>
+											</span>
+				</div>
+			</div>
+
+									
+			Hello everyone! 
+ It is with great excitement that I introduce to you Xbox Feedback - our shiny new site to give you, our loyal fans, the greatest voice...
+		</div>
+		<div class="abbreviated-post-footer"></div>
+	</li>
+
+	
+	
+		
+	<li class="content-item ">
+		<div class="abbreviated-post-header"></div>
+		<div class="abbreviated-post post-content user-defined-markup">
+			<h4 class="post-name">
+				<a href="http://forums.xbox.com/xbox_forums/forum_faq/f/6/t/3058.aspx" class="internal-link view-post">
+					<span></span>Welcome to the Xbox.com Forums!
+				</a>
+			</h4>
+
+			
+			<div class="evolution2-post-author-date fiji-post-author-date">
+				<div class="post-date">
+					<span class="value">over 3 years ago</span>
+				</div>
+				<div class="post-author">
+					<span class="evolution2-post-author-by fiji-post-author-by">by</span>
+					<span class="user-name">
+													<a href="/members/DMZilla/default.aspx" class="internal-link view-user-profile" core_userinfopopup="true">
+								<span></span>DMZilla
+							</a>
+											</span>
+				</div>
+			</div>
+
+									
+			Welcome to the Xbox.com Forums ! The forums are provided by Microsoft as a way for gamers and enthusiasts to connect with each other and talk about everything...
+		</div>
+		<div class="abbreviated-post-footer"></div>
+	</li>
+
+		</ul>
+	<div class="content-list-footer"></div>
+	</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment html-content no-wrapper-with-spacing with-header" id="fragment-7446">
+<div class="content-fragment-header"><div>
+Popular
+	</div></div>
+<div class="content-fragment-content">
+
+<div class="user-defined-markup" style="">
+<ul>
+<li><a href="http://forums.xbox.com/xbox_forums/forum_faq/f/6/p/3058/19910.aspx#19910">Welcome!</a></li>
+<li><a href="http://forums.xbox.com/xbox_forums/xbox_support/default.aspx">Xbox Support</a></li>
+</ul>
+</div>
+		</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment scripted-content-fragment no-wrapper-with-spacing with-header" id="fragment-7447">
+<div class="content-fragment-header"><div>Settings</div></div>
+<div class="content-fragment-content">
+
+      <p>
+      </p><ul class="RightRailList">
+      <li><a href="/user/settings.aspx">Settings</a></li>
+      </ul>
+      <p></p>
+    </div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+<div class="layout-region content" id="ctl00_content_ctl00_content">
+<div class="layout-region-inner content"><div class="content-fragment site-search no-wrapper-with-spacing with-header" id="fragment-7448">
+<div class="content-fragment-header"><div>Find a Topic or Ask a Question</div></div>
+<div class="content-fragment-content">
+
+<div class="field-list-header"></div>
+<fieldset class="field-list">
+	<ul class="field-list">
+		<li class="field-item">
+			<label class="field-item-header query" for="fragment-7448_query">Search</label>
+			<span class="field-item-input"><input type="text" id="fragment-7448_query" length="15" maxlength="64" class="search empty" autocomplete="off"></span>
+		</li>
+			</ul>
+</fieldset>
+<div class="field-list-footer"></div>
+
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+<div class="content-fragment raw-html no-wrapper-with-spacing" id="fragment-7449">
+<div class="content-fragment-content">
+<div class="user-defined-markup"><div class="heroForum">
+    <div class="modColumn1">
+        <a href="http://www.xbox.com/en-US/forums">
+     <h3>Xbox Directory</h3>
+<img src="http://nxeassets.xbox.com/shaxam/0201/5c/ba/5cbada85-9a8b-4684-ba9d-16ce8408c9b5.JPG?v=1#ForumMod3_1.JPG">
+</a>
+        <p>Can't find what you are looking for? The Xbox Forum Directory has links to popular topics and info. <b>For region specific general discussion please check the drop down nav bar above.</b></p>
+    </div>
+    <div class="modColumn2">
+        <a href="http://forums.xbox.com/xbox_forums/default.aspx">
+<h3>Community Discussion</h3>
+<img src="http://nxeassets.xbox.com/shaxam/0201/5d/4a/5d4abd32-81cd-41d1-b421-a4af0d43fe12.PNG?v=1#hero_major-nelson_xbox.PNG">
+</a>
+        <p>Keep up with the conversation! Join your fellow Xbox gamers and talk about your favorite games, apps, hardware, events, and more!</p>
+    </div>
+    <div class="modColumn3">
+        <a href="http://forums.xbox.com/xbox_forums/xbox_support/default.aspx">
+<h3>Community Support</h3>
+<img src="http://nxeassets.xbox.com/shaxam/0201/5c/b5/5cb53e0b-5b74-4a1a-97c1-7a165cd936e6.PNG?v=1#hero_support_xbox.PNG">
+</a>
+        <p>Having trouble connecting to Xbox Live or just buy a brand new console and unsure what plug goes where? Come to the Support Forum for answers to these questions and much more.</p>
+    </div>
+</div>
+</div></div>
+<div class="content-fragment-footer"></div>
+</div>
+<div id="fragment-7450"></div>
+<div id="fragment-7451"></div>
+<div id="fragment-7452"></div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div>
+
+            
+			    <div class="footer-fragments-header"></div>
+<div class="footer-fragments" id="ctl00_footer_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content content" id="ctl00_footer_ctl00_layout">
+<div class="layout-region content" id="ctl00_footer_ctl00_content">
+<div class="layout-region-inner content"><div class="content-fragment scripted-content-fragment no-wrapper" id="footer-13">
+<div class="content-fragment-content">
+
+
+
+<div id="BodyFooter" class="container">
+    
+<div id="ShellFooterContent">
+    <div class="PrimaryContent">
+        <div id="ShellRightContentArea">
+            
+        </div>
+
+        <div id="ShellFooterNavigation">
+<a href="http://www.xbox.com/en-US/support/?xr=footnav">Support</a><a href="http://feedback.xbox.com/?xr=footnav" class="spread">Feedback</a><a href="http://news.xbox.com?xr=footnav" class="spread">Xbox Wire</a><a href="http://www.xbox.com/en-US/developers?xr=footnav" class="spread">For Developers</a><a href="http://careers.microsoft.com/gclp.aspx?xr=footnav" class="spread">Jobs</a><a href="http://support.xbox.com/en-US/games/pc-games/photosensitive-seizure-warning?xr=footnav" class="spread">Photosensitive Seizure Warning</a>        </div>
+
+        <div id="ShellFooterSocial" class="ShellFooterSocial">
+<iframe src="//www.facebook.com/plugins/like.php?locale=en_US&amp;href=http%3a%2f%2fwww.facebook.com%2fxbox&amp;send=false&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font&amp;height=21" class="socialPluginFramefacebook spread" style="border:none; overflow:hidden; height:21px;" scrolling="no" frameborder="0" allowtransparency="true"></iframe>
+
+
+
+        </div>
+        <div id="ShellLeftContentArea">
+            
+        </div>
+    </div>
+
+    <div class="SecondaryContent">
+        <div id="LogoAndCopyright">
+            <div id="CopyrightLogo">
+            </div>
+            <div id="CopyrightText">
+                © 2015 Microsoft
+            </div>
+        </div>
+        <div id="ShellFooterSecondaryNavigation">
+            <div class="FuncLinkArea">
+                <a href="https://live.xbox.com/shell/changelocale?returnUrl=http://forums.xbox.com/" id="ChangeCultureLink" name="ChangeCultureLink">United States</a>
+                    <span id="MobileVersionLinkArea">
+                        <a class="changeMobileVersion" href="#" data-type="mobile" id="MobileVersionLink">Mobile version</a>
+                    </span>
+            </div>
+
+<a href="http://go.microsoft.com:80/fwlink/?linkid=259655&amp;clcid=0x409&amp;xr=footnav">Privacy Statement</a><a href="http://www.xbox.com/en-US/Legal/XboxComTOU?xr=footnav" class="spread">Xbox.com Terms of Use</a><a href="http://www.xbox.com/en-US/Legal/CodeOfConduct?xr=footnav" class="spread">Code of Conduct</a><a href="http://g.msn.com/AIPRIV/en-us?xr=footnav" class="spread">About Our Ads</a>        </div>
+    </div>
+
+</div>
+
+    <iframe name="__bkframe" height="0" width="0" frameborder="0" style="display:none;
+        position:absolute;
+        clip:rect(0px 0px 0px 0px)" src="about:blank">
+    </iframe>
+</div>
+
+
+</div>
+<div class="content-fragment-footer"></div>
+</div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div><div class="footer-fragments-footer"></div>
+            
+		
+    <script src="/cfs-filesystemfile.ashx/__key/widgetfiles/1978fa9a5f0f49efbf8e49bf02da07c3-d/pager_2D00_overrides.js" language="javascript" type="text/javascript"></script>
+    <script src="/cfs-filesystemfile.ashx/__key/widgetfiles/1978fa9a5f0f49efbf8e49bf02da07c3-d/search_2D00_script.js" language="javascript" type="text/javascript"></script>
+    <script src="/cfs-filesystemfile.ashx/__key/widgetfiles/1978fa9a5f0f49efbf8e49bf02da07c3-d/header_2D00_script.js" language="javascript" type="text/javascript"></script>
+	<script type="text/javascript" src="/cfs-filesystemfile.ashx/__key/widgetfiles/bcc2cc36aa40421c8b51193c75031694-d/ui.js"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.navigationGroup.register({
+				parentList: jQuery('#header-25_parentGroupListContainer'),
+				childList: jQuery('#header-25_childGroupListContainer'),
+				childGroupsUrl: '/utility/scripted-file.ashx?_cf=child-groups.vm\u0026_fid=25\u0026_ct=header\u0026_cp=\u0026_ctt=0c647246673542f9875dc8b991fe739b\u0026_ctc=-1\u0026_ctn=7e987e474b714b01ba29b4336720c446\u0026_cc=0\u0026AppType=Unknown',
+				error: 'An error occurred while attempting to load groups.'
+			});
+		});
+	</script>
+<script type="text/javascript">
+// <![CDATA[
+ctl00_header_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_header_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_header_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script>	<script type="text/javascript" src="/cfs-filesystemfile.ashx/__key/widgetfiles/b7a8a9d8f19f40e88d6f68cbc219a734-d/ui.js"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.siteSearch.register({
+				searchUrl: '/utility/scripted-file.ashx?_cf=search.vm\u0026_fid=7448\u0026_ct=page\u0026_cp=common-home\u0026_ctt=294234b2950540a9a67993162fd50c1c\u0026_ctc=2100\u0026_ctn=7e987e474b714b01ba29b4336720c446\u0026_cc=0\u0026AppType=Unknown',
+				searchResultsUrl: '/search/default.aspx?{0}',
+				query: jQuery('#fragment-7448_query'),
+				optionsLink: jQuery('#fragment-7448_options'),
+				optionsContent: jQuery('#fragment-7448_filter-options'),
+				filterName: 'fragment-7448_filter',
+				loading: 'Searching...',
+				error: 'Search is currently unavailable.',
+				groupId: ''
+			});
+		});
+	</script>
+<script type="text/javascript">
+// <![CDATA[
+ctl00_content_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_content_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_content_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+jQuery("#ChangeCultureLink").attr("href","https://live.xbox.com/shell/changelocale?returnUrl=http://forums.xbox.com/");
+// ]]>
+</script>
+<script type="text/javascript">
+// <![CDATA[
+ctl00_footer_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_footer_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_footer_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+window.ctl00_header_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_header_ctl00_ctl00','ctl00$header$ctl00$ctl00','aspnetForm');
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+window.ctl00_content_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_content_ctl00_ctl00','ctl00$content$ctl00$ctl00','aspnetForm');
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+window.ctl00_footer_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_footer_ctl00_ctl00','ctl00$footer$ctl00$ctl00','aspnetForm');
+// ]]>
+</script></form>
+	
+
+
+</body></html>
