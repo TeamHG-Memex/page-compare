@@ -137,3 +137,7 @@ TODO
 ## scrape.py
 
 TODO
+
+---
+
+[![define hyperion gray](https://hyperiongray.s3.amazonaws.com/define-hg.svg)](https://hyperiongray.com/?pk_campaign=github&pk_kwd=page-compare "Hyperion Gray")
